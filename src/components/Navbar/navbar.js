@@ -12,10 +12,10 @@ function Navbar() {
 				</h3>
 				<ul id="nav-links">
 					<li>
-						<Link to="/story">Story</Link>
+						<Link to="/story">Our Story</Link>
 					</li>
 					<li>
-						<Link to="/wedding">Wedding</Link>
+						<Link to="/wedding">The Wedding</Link>
 					</li>
 					<li>
 						<Link to="/photos">Photos</Link>
