@@ -24,7 +24,7 @@ function Navbar() {
 						<Link to="/reception">The Wedding</Link>
 					</li>
 					<li>
-						<Link to="/photos">Photos</Link>
+						<Link to="/gallery">Photos</Link>
 					</li>
 					<li>
 						<Link to="/rsvp">RSVP</Link>
@@ -39,7 +39,7 @@ function Navbar() {
 				<Route path="/reception">
 					<Reception />
 				</Route>
-				<Route path="/photos">
+				<Route path="/gallery">
 					<Gallery />
 				</Route>
 				<Route path="/rsvp">
