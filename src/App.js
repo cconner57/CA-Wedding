@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <BGVideo /> */}
+      <p>Home goes here</p>
     </div>
   );
 }
