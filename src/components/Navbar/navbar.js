@@ -1,6 +1,11 @@
 import React from 'react';
 import './navbar.css';
 
+import Gallery from '../Gallery/gallery'
+import Reception from '../Reception/location'
+import RSVP from '../RSVP/rsvp'
+import Story from '../Story/story'
+
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 function Navbar() {
@@ -15,7 +20,7 @@ function Navbar() {
 						<Link to="/story">Our Story</Link>
 					</li>
 					<li>
-						<Link to="/wedding">The Wedding</Link>
+						<Link to="/reception">The Wedding</Link>
 					</li>
 					<li>
 						<Link to="/photos">Photos</Link>
@@ -30,11 +35,11 @@ function Navbar() {
 				<Route path="/story">
 					<Story />
 				</Route>
-				<Route path="/wedding">
-					<Wedding />
+				<Route path="/reception">
+					<Reception />
 				</Route>
 				<Route path="/photos">
-					<Photos />
+					<Gallery />
 				</Route>
 				<Route path="/rsvp">
 					<RSVP />
@@ -45,22 +50,6 @@ function Navbar() {
 			</Switch>
 		</Router>
     )
-}
-
-function Story() {
-	return <h2>Story</h2>;
-}
-
-function Wedding() {
-	return <h2>Wedding</h2>;
-}
-
-function Photos() {
-	return <h2>Photos</h2>;
-}
-
-function RSVP() {
-	return <h2>RSVP</h2>;
 }
 
 function Home() {
