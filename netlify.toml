@@ -1,9 +1,0 @@
-[build]
-base = "wedding/"
-publish = "wedding/build/"
-command = "npm start"
-
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
