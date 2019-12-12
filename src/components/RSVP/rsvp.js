@@ -3,7 +3,7 @@ import React from 'react'
 function RSVP() {
     return (
         <div>
-            RSVP goes here
+            <p>RSVP goes here</p>
         </div>
     )
 }

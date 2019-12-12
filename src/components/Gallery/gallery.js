@@ -3,7 +3,7 @@ import React from 'react'
 function Gallery() {
     return (
         <div>
-            Photos go here
+            <p>Photos go here</p>
         </div>
     )
 }
