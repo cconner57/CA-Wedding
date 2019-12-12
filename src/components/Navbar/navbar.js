@@ -5,6 +5,7 @@ import Gallery from '../Gallery/gallery'
 import Reception from '../Reception/location'
 import RSVP from '../RSVP/rsvp'
 import Story from '../Story/story'
+import Landing from '../Landing/home'
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
@@ -45,15 +46,11 @@ function Navbar() {
 					<RSVP />
 				</Route>
 				<Route path="/">
-					<Home />
+					<Landing />
 				</Route>
 			</Switch>
 		</Router>
     )
-}
-
-function Home() {
-	return <h2>Home</h2>;
 }
 
 export default Navbar;
