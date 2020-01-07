@@ -12,12 +12,12 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 function Navbar() {
     return (
 		<Router>
-			<nav id="nav-bar">
+			<nav className="nav-bar">
 				<img src="/floral-border.svg" />
 				<h3>
 					<Link to="/">Home</Link>
 				</h3>
-				<ul id="nav-links">
+				<ul className="nav-links">
 					<li>
 						<Link to="/story">Our Story</Link>
 					</li>
