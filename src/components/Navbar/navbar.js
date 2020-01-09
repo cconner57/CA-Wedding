@@ -13,7 +13,6 @@ function Navbar() {
     return (
 		<Router>
 			<nav className="nav-bar">
-				<img src="/floral-border.svg" />
 				<h3>
 					<Link to="/">Home</Link>
 				</h3>
