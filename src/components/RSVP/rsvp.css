@@ -54,7 +54,8 @@ input[type=radio] {
 	width: 100%;
 	position: relative;
 	height: 50px;
-	overflow: hidden;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .form input[type=text] {
