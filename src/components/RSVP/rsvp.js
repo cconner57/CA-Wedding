@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import './rsvp.css';
 
 function RSVP() {
-	
-
-	// https://script.google.com/macros/s/AKfycbzvCd37m4u6YBwNmFzBimhGqg3CHQwN9kwSiCazfSxYkaPa__6I/exec
-
 	return (
 		<div className="rsvp-form">
 			<h1>C &amp; A</h1>
@@ -16,7 +12,7 @@ function RSVP() {
 				<h5>Kindly Reply By 'Enter Date'</h5>
 			</div>
 			<hr />
-			<form name="RSVP" method="POST" data-netlify="true">
+			<form name="RSVP" data-netlify="true">
 				<div className="rsvp-name">
 					<input type="text" name="Name" autoComplete="off" required />
 					<label htmlFor="nameInput" className="label-name">
