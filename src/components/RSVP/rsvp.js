@@ -2,16 +2,10 @@ import React, { useState } from 'react';
 import './rsvp.css';
 
 function RSVP() {
-	const [ name, setName ] = useState('');
-	const [ value, setState ] = useState(null);
+	
 
-	const handleChange = (event) => {
-		setState(event.target.value);
-	};
+	// https://script.google.com/macros/s/AKfycbzvCd37m4u6YBwNmFzBimhGqg3CHQwN9kwSiCazfSxYkaPa__6I/exec
 
-	const handleSubmit = (event) => {
-		event.preventDefault();
-	};
 	return (
 		<div className="rsvp-form">
 			<h1>C &amp; A</h1>
@@ -22,21 +16,23 @@ function RSVP() {
 				<h5>Kindly Reply By 'Enter Date'</h5>
 			</div>
 			<hr />
-			<form onSubmit={handleSubmit}>
-				<p class="form">
-					<input type="text" name="Name" onChange={handleChange} autocomplete="off" required />
-					<label for="nameInput" class="label-name">
+			<form name="RSVP" method="POST" data-netlify="true">
+				<div className="rsvp-name">
+					<input type="text" name="Name" autoComplete="off" required />
+					<label htmlFor="nameInput" className="label-name">
 						<span className="content-name">First &amp; Last Name</span>
 					</label>
-				</p>
-				<label>
-					Attending:
-					<input type="radio" id="radio-1" name="attending" value="yes" onChange={handleChange} />Accept
-					<input type="radio" id="radio-1" name="attending" value="no" onChange={handleChange} />Decline
-				</label>
-				<p>
+				</div>
+				<div className="rsvp-attending">
+					<label>
+						Attending:
+						<input type="radio" id="radio-1" name="Attending" value="yes" />Accept
+						<input type="radio" id="radio-1" name="Attending" value="no" />Decline
+					</label>
+				</div>
+				<div>
 					<input type="submit" value="Submit" />
-				</p>
+				</div>
 			</form>
 		</div>
 	);
