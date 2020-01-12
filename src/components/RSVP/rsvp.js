@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './rsvp.css';
-import axios from 'axios';
+// import axios from 'axios';
 
 function RSVP() {
 	const [ name, setName ] = useState('');
@@ -14,7 +14,7 @@ function RSVP() {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 	};
-	
+
 	return (
 		<div className="rsvp-form">
 			<h1>C &amp; A</h1>

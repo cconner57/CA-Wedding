@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
 
-import Navbar from './components/Navbar/navbar';
-// import BGVideo from './components/BG-Video/bg-video';
+import Navbar from './components/Navbar/navbar'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar />
     </div>
   );
