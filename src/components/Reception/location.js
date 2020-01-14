@@ -3,7 +3,7 @@ import './location.css';
 
 function Location() {
 	return (
-		<div className="location">
+		<div className="container">
 			<div className="ceremony">
 				<img src="/media/ceremony.jpeg" alt="Wedgewood Ceremony" />
 				<h1>Wedgewood La Verne</h1>

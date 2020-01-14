@@ -3,8 +3,8 @@ import './story.css'
 
 function Story() {
     return (
-        <div>
-            <p>Story goes here</p>
+        <div className="container">
+            <p>Change to registry?</p>
         </div>
     )
 }

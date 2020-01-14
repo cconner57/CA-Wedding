@@ -3,7 +3,7 @@ import './gallery.css';
 
 function Gallery() {
 	return (
-		<div className="photos">
+		<div className="container">
 			<div className="engagement-photos">
 				<h2>Engagement Photos</h2>
 				<img src="https://placeimg.com/640/480/animals" />

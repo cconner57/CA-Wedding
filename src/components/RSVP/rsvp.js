@@ -16,33 +16,35 @@ function RSVP() {
 	};
 
 	return (
-		<div className="rsvp-form">
-			<h1>C &amp; A</h1>
-			<div className="rsvp-info">
-				<h4>Monday, January 18 2021</h4>
-				<h4>Wedgewood Wedding</h4>
-				<h4>Sierra La Verne</h4>
-				<h5>Kindly Reply By 'Enter Date'</h5>
+		<div className="container">
+			<div className="RSVP-form">
+				<h1>C &amp; A</h1>
+				<div className="RSVP-info">
+					<h4>Monday, January 18 2021</h4>
+					<h4>Wedgewood Wedding</h4>
+					<h4>Sierra La Verne</h4>
+					<h5>Kindly Reply By 'Enter Date'</h5>
+				</div>
+				<hr />
+				<form name="RSVP" onSubmit={handleSubmit}>
+					<div className="RSVP-name">
+						<input type="text" name="Name" onChange={handleChange} autoComplete="off" required />
+						<label htmlFor="nameInput" className="label-name">
+							<span className="content-name">First &amp; Last Name</span>
+						</label>
+					</div>
+					<div className="RSVP-attending">
+						<label>
+							Attending:
+							<input type="radio" id="radio-1" name="Attending" value="yes" onChange={handleChange} />Accept
+							<input type="radio" id="radio-1" name="Attending" value="no" onChange={handleChange} />Decline
+						</label>
+					</div>
+					<div>
+						<input type="submit" value="Submit" />
+					</div>
+				</form>
 			</div>
-			<hr />
-			<form name="RSVP" onSubmit={handleSubmit}>
-				<div className="rsvp-name">
-					<input type="text" name="Name" onChange={handleChange} autoComplete="off" required />
-					<label htmlFor="nameInput" className="label-name">
-						<span className="content-name">First &amp; Last Name</span>
-					</label>
-				</div>
-				<div className="rsvp-attending">
-					<label>
-						Attending:
-						<input type="radio" id="radio-1" name="Attending" value="yes" onChange={handleChange} />Accept
-						<input type="radio" id="radio-1" name="Attending" value="no" onChange={handleChange} />Decline
-					</label>
-				</div>
-				<div>
-					<input type="submit" value="Submit" />
-				</div>
-			</form>
 		</div>
 	);
 }

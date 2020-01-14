@@ -5,7 +5,7 @@ import Gallery from '../Gallery/gallery'
 import Reception from '../Reception/location'
 import RSVP from '../RSVP/rsvp'
 import Story from '../Story/story'
-import Landing from '../Landing/home'
+import Landing from '../Home/home'
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
