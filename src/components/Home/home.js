@@ -3,9 +3,26 @@ import './home.css'
 
 function Home() {
     return (
-        <div className="container">
+        <div className="container card">
             <div className="Home-slideshow">
-                <h1>Slideshow of us</h1>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="..."/>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="..."/>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="..."/>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="Home-description">
                 <h1>Brief description of event + date</h1>

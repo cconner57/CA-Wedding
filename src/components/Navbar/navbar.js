@@ -4,7 +4,7 @@ import './navbar.css';
 import Gallery from '../Gallery/gallery'
 import Reception from '../Reception/location'
 import RSVP from '../RSVP/rsvp'
-import Story from '../Story/story'
+import Registry from '../Registry/registry'
 import Landing from '../Home/home'
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -12,29 +12,29 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 function Navbar() {
     return (
 		<Router>
-			<nav className="nav-bar">
-				<h3>
-					<Link to="/">Home</Link>
-				</h3>
-				<ul className="nav-links">
-					<li>
-						<Link to="/story">Our Story</Link>
+			<nav className="navbar sticky-top bg-light justify-content-center m-3 shadow-sm">
+				<ul class="nav">
+					<li class="nav-item">
+						<Link class="nav-link" to="/">Home</Link>
 					</li>
-					<li>
-						<Link to="/reception">The Wedding</Link>
+					<li class="nav-item">
+						<Link class="nav-link" to="/registry">Registry</Link>
 					</li>
-					<li>
-						<Link to="/gallery">Photos</Link>
+					<li class="nav-item">
+						<Link class="nav-link" to="/reception">The Wedding</Link>
 					</li>
-					<li>
-						<Link to="/rsvp">RSVP</Link>
+					<li class="nav-item">
+						<Link class="nav-link" to="/gallery">Photos</Link>
+					</li>
+					<li class="nav-item">
+						<Link class="nav-link" to="/rsvp">RSVP</Link>
 					</li>
 				</ul>
 			</nav>
 			
 			<Switch>
-				<Route path="/story">
-					<Story />
+				<Route path="/registry">
+					<Registry />
 				</Route>
 				<Route path="/reception">
 					<Reception />

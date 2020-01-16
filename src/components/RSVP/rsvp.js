@@ -16,32 +16,29 @@ function RSVP() {
 	};
 
 	return (
-		<div className="container">
-			<div className="RSVP-form">
-				<h1>C &amp; A</h1>
+		<div className="container mx-auto">
+			<div className="card RSVP-form shadow-lg">
+				<h1>Chris &amp; Allison</h1>
 				<div className="RSVP-info">
 					<h4>Monday, January 18 2021</h4>
-					<h4>Wedgewood Wedding</h4>
-					<h4>Sierra La Verne</h4>
+					
 					<h5>Kindly Reply By 'Enter Date'</h5>
 				</div>
 				<hr />
-				<form name="RSVP" onSubmit={handleSubmit}>
-					<div className="RSVP-name">
-						<input type="text" name="Name" onChange={handleChange} autoComplete="off" required />
-						<label htmlFor="nameInput" className="label-name">
-							<span className="content-name">First &amp; Last Name</span>
-						</label>
+				<form>
+					<div className="form-group">
+						<input type="text" className="form-control" id="Name" aria-describedby="Name" placeholder="First &amp; Last Name" required />		
 					</div>
-					<div className="RSVP-attending">
-						<label>
-							Attending:
-							<input type="radio" id="radio-1" name="Attending" value="yes" onChange={handleChange} />Accept
-							<input type="radio" id="radio-1" name="Attending" value="no" onChange={handleChange} />Decline
-						</label>
+					<div className="form-check form-check-inline">
+						<label className="pr-3">Attending:</label>
+						<input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+						<label className="form-check-label mr-3" for="inlineRadio1">Accept</label>
+
+						<input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"/>
+						<label className="form-check-label" for="inlineRadio2">Decline</label>
 					</div>
 					<div>
-						<input type="submit" value="Submit" />
+						<button type="submit" className="btn btn-light mt-2">Submit</button>
 					</div>
 				</form>
 			</div>

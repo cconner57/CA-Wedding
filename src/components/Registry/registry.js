@@ -1,9 +1,8 @@
 import React from 'react'
-import './story.css'
 
 function Story() {
     return (
-        <div className="container">
+        <div className="container card">
             <p>Change to registry?</p>
         </div>
     )

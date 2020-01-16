@@ -1,31 +1,30 @@
 import React from 'react';
-import './gallery.css';
 
 function Gallery() {
 	return (
-		<div className="container">
-			<div className="engagement-photos">
-				<h2>Engagement Photos</h2>
-				<img src="https://placeimg.com/640/480/animals" />
-				<img src="https://placeimg.com/640/480/animals" />
-				<img src="https://placeimg.com/640/480/animals" />
+		<div className="container card">
+			<h2 class="card-header">Engagement Photos</h2>
+			<div className="row">
+				<img class="col" src="https://placeimg.com/640/480/animals" />
+				<img class="col" src="https://placeimg.com/640/480/animals" />
+				<img class="col" src="https://placeimg.com/640/480/animals" />
 			</div>
 			<hr />
-			<div className="wedding-photos">
-				<h2>Wedding Photos</h2>
-				<img src="https://placeimg.com/640/480/animals" />
-				<img src="https://placeimg.com/640/480/animals" />
-				<img src="https://placeimg.com/640/480/animals" />
-				<img src="https://placeimg.com/640/480/animals" />
+			<h2 class="card-header">Wedding Photos</h2>
+			<div className="">
+				<img class="rounded" src="https://placeimg.com/640/480/animals" />
+				<img class="rounded" src="https://placeimg.com/640/480/animals" />
+				<img class="rounded" src="https://placeimg.com/640/480/animals" />
+				<img class="rounded" src="https://placeimg.com/640/480/animals" />
 			</div>
 			<hr />
-			<div className="instagram-photos">
-				<h2>Instragram Photos</h2>
-				<img src="https://placeimg.com/640/480/animals" />
-				<img src="https://placeimg.com/640/480/animals" />
-				<img src="https://placeimg.com/640/480/animals" />
-				<img src="https://placeimg.com/640/480/animals" />
-				<img src="https://placeimg.com/640/480/animals" />
+			<h2 class="card-header">Instragram Photos</h2>
+			<div className="">
+				<img class="rounded" src="https://placeimg.com/640/480/animals" />
+				<img class="rounded" src="https://placeimg.com/640/480/animals" />
+				<img class="rounded" src="https://placeimg.com/640/480/animals" />
+				<img class="rounded" src="https://placeimg.com/640/480/animals" />
+				<img class="rounded" src="https://placeimg.com/640/480/animals" />
 			</div>
 		</div>
 	);
