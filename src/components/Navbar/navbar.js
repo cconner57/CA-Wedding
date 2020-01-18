@@ -24,7 +24,7 @@ function Navbar() {
 						<Link class="nav-link" to="/reception">The Wedding</Link>
 					</li>
 					<li class="nav-item">
-						<Link class="nav-link" to="/gallery">Photos</Link>
+						<Link class="nav-link" to="/gallery">Gallery</Link>
 					</li>
 					<li class="nav-item">
 						<Link class="nav-link" to="/rsvp">RSVP</Link>

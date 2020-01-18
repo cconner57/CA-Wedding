@@ -1,11 +1,8 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.Home-slideshow {
-    background-color: green;
+.c-size {
+    width: 100%;
+    height: 30em;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .Home-description {

@@ -17,7 +17,7 @@ function RSVP() {
 
 	return (
 		<div className="container mx-auto">
-			<div className="card RSVP-form shadow-lg">
+			<div className="card RSVP-form shadow-lg mt-5">
 				<h1>Chris &amp; Allison</h1>
 				<div className="RSVP-info">
 					<h4>Monday, January 18 2021</h4>
@@ -38,7 +38,7 @@ function RSVP() {
 						<label className="form-check-label" for="inlineRadio2">Decline</label>
 					</div>
 					<div>
-						<button type="submit" className="btn btn-light mt-2">Submit</button>
+						<button type="submit" className="btn btn-light mt-2 border">Submit</button>
 					</div>
 				</form>
 			</div>
