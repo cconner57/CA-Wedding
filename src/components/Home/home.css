@@ -1,8 +1,10 @@
 .c-size {
-    width: 100%;
-    height: 30em;
-    object-fit: cover;
-    overflow: hidden;
+    width: auto;
+    height: 600px;
+}
+
+.position-i {
+    top: -125px;
 }
 
 .Home-description {
