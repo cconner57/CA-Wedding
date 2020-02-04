@@ -1,34 +1,25 @@
 import React from 'react';
-import './gallery.css'
+import './gallery.css';
+
+const photos = [
+	'/media/gallery/1.jpg',
+	'/media/gallery/2.jpg',
+	'/media/gallery/3.jpg',
+	'/media/gallery/4.jpg',
+	'/media/gallery/5.jpg',
+	'/media/gallery/6.jpg'
+];
 
 function Gallery() {
+	const galleryCard = photos.map((i) => {
+		return <img key={i} class="img-thumbnail overflow-hidden c-image" src={i} />;
+	});
+
 	return (
 		<div className="container card">
 			<h2 class="card-header">Engagement Photos</h2>
-			<div className="row-fluid">
-				<img class="img-thumbnail overflow-hidden c-image" src="/media/gallery/3.jpg" />
-				<img class="img-thumbnail overflow-hidden c-image" src="/media/gallery/6.jpg" />
-				<img class="img-thumbnail overflow-hidden c-image" src="/media/gallery/1.jpg" />
-				<img class="img-thumbnail overflow-hidden c-image" src="/media/gallery/5.jpg" />
-				<img class="img-thumbnail overflow-hidden c-image" src="/media/gallery/2.jpg" />
-				<img class="img-thumbnail overflow-hidden c-image" src="/media/gallery/4.jpg" />
-			</div>
+			<div className="row-fluid">{galleryCard}</div>
 			<hr />
-			<h2 class="card-header">Wedding Photos</h2>
-			<div className="row-fluid">
-				<img class="img-thumbnail overflow-hidden c-image" src="https://placeimg.com/640/480/animals" />
-				<img class="img-thumbnail overflow-hidden c-image" src="https://placeimg.com/640/480/animals" />
-				<img class="img-thumbnail overflow-hidden c-image" src="https://placeimg.com/640/480/animals" />
-				<img class="img-thumbnail overflow-hidden c-image" src="https://placeimg.com/640/480/animals" />
-			</div>
-			<hr />
-			<h2 class="card-header">Instragram Photos</h2>
-			<div className="row-fluid">
-				<img class="img-thumbnail overflow-hidden c-image" src="https://placeimg.com/640/480/animals" />
-				<img class="img-thumbnail overflow-hidden c-image" src="https://placeimg.com/640/480/animals" />
-				<img class="img-thumbnail overflow-hidden c-image" src="https://placeimg.com/640/480/animals" />
-				<img class="img-thumbnail overflow-hidden c-image" src="https://placeimg.com/640/480/animals" />
-			</div>
 		</div>
 	);
 }
