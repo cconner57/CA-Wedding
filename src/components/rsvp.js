@@ -5,41 +5,77 @@ function RSVP() {
 	const [ name, setName ] = useState('');
 	const [ value, setValue ] = useState(null);
 
-	const handleChange = (event) => {
-		setName(event.target.value);
-		setValue(event.target.value);
+	const handleChange = (e) => {
+		setName(e.target.value);
+		setValue(e.target.value);
 	};
 
-	const handleSubmit = (event) => {
-		event.preventDefault();
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		document.querySelector('.RSVP-show').style.display = 'none';
+		document.querySelector('.RSVP-submit').style.display = 'block';
 	};
 
 	return (
 		<div className="container mx-auto">
-			<div className="card RSVP-form shadow-lg mt-5">
-				<h1>Chris &amp; Allison</h1>
-				<div className="RSVP-info">
-					<h4>Monday, January 18 2021</h4>
-					
-					<h5>Kindly Reply By 'Enter Date'</h5>
-				</div>
-				<hr />
-				<form>
-					<div className="form-group">
-						<input type="text" className="form-control" id="Name" aria-describedby="Name" placeholder="First &amp; Last Name" required />		
+			<div className="RSVP-form shadow-lg mt-5">
+				<div className="RSVP-show">
+					<div className="RSVP-info">
+						<h4>Kindly Respond By</h4>
+						<h4>
+							November 18<sup>th</sup>, 2020
+						</h4>
 					</div>
-					<div className="form-check form-check-inline">
-						<label className="pr-3">Attending:</label>
-						<input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
-						<label className="form-check-label mr-3" for="inlineRadio1">Accept</label>
+					<hr />
+					<form name ="RSVP" data-netlify="true">
+						<div className="">
+							<input
+								type="text"
+								className="input-name"
+								id="Name"
+								placeholder="First &amp; Last Name"
+								required onChange={e => setName(e.target.value)}
+							/>
+						</div>
+						<div className="">
+							<textarea type="textarea" className="input-song" id="Name" placeholder="Song request" />
+						</div>
+						<div className="form-check form-check-inline">
+							<label className="pr-3">Attending:</label>
 
-						<input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"/>
-						<label className="form-check-label" for="inlineRadio2">Decline</label>
-					</div>
-					<div>
-						<button type="submit" className="btn btn-light mt-2 border">Submit</button>
-					</div>
-				</form>
+							<input
+								className="form-check-input"
+								type="radio"
+								name="inlineRadioOptions"
+								id="inlineRadio1"
+								value="option1"
+							/>
+							<label className="form-check-label mr-3" for="inlineRadio1">
+								Accept
+							</label>
+
+							<input
+								className="form-check-input"
+								type="radio"
+								name="inlineRadioOptions"
+								id="inlineRadio2"
+								value="option2"
+							/>
+							<label className="form-check-label" for="inlineRadio2">
+								Decline
+							</label>
+						</div>
+						<div>
+							<button type="submit" className="btn btn-light mt-2 border">
+								Submit
+							</button>
+						</div>
+					</form>
+				</div>
+				<div className="RSVP-submit">
+					<h4>RSVP Sent</h4>
+					<h5>Thank you, {name}</h5>
+				</div>
 			</div>
 		</div>
 	);

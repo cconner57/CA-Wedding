@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
     return (
 		<div>
-			<nav className="navbar sticky-top bg-light justify-content-center m-3 shadow-sm">
+			<nav className="navbar bg-light justify-content-center m-3 shadow-sm">
 				<ul class="nav">
 					<li class="nav-item">
 						<Link class="nav-link" to="/">Home</Link>

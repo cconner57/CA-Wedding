@@ -2,82 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 
-a {
-	text-decoration: none;
-	color: black;
-}
-
-a:hover {
-	color: rgb(182, 182, 182);
-	transition: all .5s ease;
-}
-
-body {
-	color: white;
-}
-
-h2, h4 {
-	color: black;
-}
-
-input[type=submit] {
-	font-family: 'Dosis', sans-serif;
-}
-
-p {
-	color: black;
-}
-
-.container {
-	margin: 0 10%;
-	/* background-color: red; */
-	text-align: center;
-}
-
-.c-image {
-	height: 200px;
-}
-
-.c-size {
-	width: auto;
-	height: 600px;
-}
-
-.ceremony h1 {
-	font-family: 'Dancing Script', cursive;
-}
-
-.Home-description {
-	background-color: blue;
-}
-
-.position-i {
-	top: -125px;
-}
-
-.RSVP-form {
-	background-image: url(/media/parchment.jpg);
-	margin: 0 20%;
-	padding: 5%;
-	text-align: center;
-}
-
-.RSVP-form h1 {
-	font-family: 'Dancing Script', cursive;
-}
-
-.RSVP-form h1 {
-	color: black;
-}
-
-.RSVP-form h4,
-.RSVP-form h5,
-.RSVP-form form {
-	font-family: 'Dosis', sans-serif;
-	color: black;
-}
-
-
 /* CSS Normalize */
 
 html {
@@ -225,4 +149,111 @@ display: none;
 }
 [hidden] {
 display: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: rgb(182, 182, 182);
+	transition: all .5s ease;
+}
+
+body {
+	color: white;
+}
+
+h2, h4 {
+	color: black;
+}
+
+input[type=submit] {
+	font-family: 'Dosis', sans-serif;
+}
+
+p {
+	color: black;
+}
+
+.container {
+	margin: 0 10%;
+	/* background-color: red; */
+	text-align: center;
+}
+
+.c-image {
+	height: 200px;
+}
+
+.c-size {
+	width: auto;
+	height: 600px;
+}
+
+.ceremony h1 {
+	font-family: 'Dancing Script', cursive;
+}
+
+.Home-description {
+	background-color: blue;
+}
+
+/* RSVP */
+
+.input-name {
+	margin: 10px;
+	padding: 5px;
+	width: 85%;
+	background: #eeebcf;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	border-bottom: 1px solid black;
+}
+
+.input-song {
+	margin: 10px;
+	padding: 5px;
+	width: 85%;
+	background: #eeebcf;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	border-bottom: 1px solid black;
+}
+
+::placeholder {
+	color: black;
+}
+
+.position-i {
+	top: -125px;
+}
+
+.RSVP-form {
+	background: #eeebcf;
+	border: 1px solid #f2eecb;
+	border-radius: 15px;
+	margin: 0 20%;
+	padding: 5%;
+	text-align: center;
+}
+
+.RSVP-form h1 {
+	font-family: 'Dancing Script', cursive;
+}
+
+.RSVP-form h1 {
+	color: black;
+}
+
+.RSVP-form h4,
+.RSVP-form h5,
+.RSVP-form form {
+	font-family: 'Dosis', sans-serif;
+	color: black;
+}
+
+.RSVP-submit {
+	display: none;
 }
