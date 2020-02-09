@@ -1,5 +1,4 @@
 import React from 'react';
-import './gallery.css';
 
 const photos = [
 	'/media/gallery/1.jpg',

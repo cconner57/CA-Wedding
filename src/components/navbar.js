@@ -1,17 +1,9 @@
 import React from 'react';
-import './navbar.css';
-
-import Gallery from '../Gallery/gallery'
-import Reception from '../Reception/location'
-import RSVP from '../RSVP/rsvp'
-import Registry from '../Registry/registry'
-import Landing from '../Home/home'
-
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
-		<Router>
+		<div>
 			<nav className="navbar sticky-top bg-light justify-content-center m-3 shadow-sm">
 				<ul class="nav">
 					<li class="nav-item">
@@ -31,25 +23,7 @@ function Navbar() {
 					</li>
 				</ul>
 			</nav>
-			
-			<Switch>
-				<Route path="/registry">
-					<Registry />
-				</Route>
-				<Route path="/reception">
-					<Reception />
-				</Route>
-				<Route path="/gallery">
-					<Gallery />
-				</Route>
-				<Route path="/rsvp">
-					<RSVP />
-				</Route>
-				<Route path="/">
-					<Landing />
-				</Route>
-			</Switch>
-		</Router>
+		</div>
     )
 }
 

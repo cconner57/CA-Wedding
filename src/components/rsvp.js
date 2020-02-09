@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './rsvp.css';
 // import axios from 'axios';
 
 function RSVP() {
