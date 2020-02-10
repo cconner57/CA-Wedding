@@ -9,9 +9,16 @@ function RSVP() {
 	});
 
 	const handleSubmit = (e) => {
-		// e.preventDefault();
 		document.querySelector('.RSVP-show').style.display = 'none';
+
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: ({ 'form-name': 'contact', ...rsvpForm })
+		});
+
 		document.querySelector('.RSVP-submit').style.display = 'block';
+		e.preventDefault();
 	};
 
 	return (
@@ -26,6 +33,7 @@ function RSVP() {
 					</div>
 					<hr />
 					<form id="send-to-sheet" name="RSVP" onSubmit={handleSubmit}>
+						<input type="hidden" name="form-name" value="contact" />
 						<div className="">
 							<input
 								type="text"
