@@ -9,7 +9,7 @@ function RSVP() {
 	});
 
 	const handleSubmit = (e) => {
-		e.preventDefault();
+		// e.preventDefault();
 		document.querySelector('.RSVP-show').style.display = 'none';
 		document.querySelector('.RSVP-submit').style.display = 'block';
 	};
