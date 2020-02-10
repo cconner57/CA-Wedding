@@ -9,7 +9,7 @@ function RSVP() {
 	});
 
 	const handleSubmit = (e) => {
-		e.preventDefault();
+		// e.preventDefault();
 		document.querySelector('.RSVP-show').style.display = 'none';
 
 		var template_params = {
@@ -23,8 +23,6 @@ function RSVP() {
 		var template_id = 'template_dWqH2k70_clone';
 
 		emailjs.send(service_id, template_id, template_params);
-
-		emailjs.sendForm('gmail', 'template_dWqH2k70', e.target, 'user_f3DauivAi5VTbaLdtvUKS');
 
 		document.querySelector('.RSVP-submit').style.display = 'block';
 	};
