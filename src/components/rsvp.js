@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import axios from 'axios';
+import emailjs from 'emailjs-com';
 
 function RSVP() {
 	const [ rsvpForm, setRSVPForm ] = useState({
@@ -9,16 +9,24 @@ function RSVP() {
 	});
 
 	const handleSubmit = (e) => {
+		e.preventDefault();
 		document.querySelector('.RSVP-show').style.display = 'none';
 
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: ({ 'form-name': 'contact', ...rsvpForm })
-		});
+		var template_params = {
+			reply_to: 'chris.conner57@gmail.com',
+			name: rsvpForm.name,
+			song: rsvpForm.song,
+			attending: rsvpForm.attending
+		};
+
+		var service_id = 'chris_conner57_gmail_com';
+		var template_id = 'template_dWqH2k70_clone';
+
+		emailjs.send(service_id, template_id, template_params);
+
+		emailjs.sendForm('gmail', 'template_dWqH2k70', e.target, 'user_f3DauivAi5VTbaLdtvUKS');
 
 		document.querySelector('.RSVP-submit').style.display = 'block';
-		e.preventDefault();
 	};
 
 	return (
@@ -32,7 +40,7 @@ function RSVP() {
 						</h4>
 					</div>
 					<hr />
-					<form id="send-to-sheet" name="RSVP" onSubmit={handleSubmit}>
+					<form onSubmit={handleSubmit}>
 						<input type="hidden" name="form-name" value="contact" />
 						<div className="">
 							<input
