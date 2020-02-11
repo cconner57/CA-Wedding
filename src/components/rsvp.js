@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
 
 function RSVP() {
 	const [ rsvpForm, setRSVPForm ] = useState({
@@ -9,23 +8,23 @@ function RSVP() {
 	});
 
 	const handleSubmit = (e) => {
-		// e.preventDefault();
+		e.preventDefault();
 		document.querySelector('.RSVP-show').style.display = 'none';
-
-		var template_params = {
-			reply_to: 'chris.conner57@gmail.com',
-			name: rsvpForm.name,
-			song: rsvpForm.song,
-			attending: rsvpForm.attending
-		};
-
-		var service_id = 'chris_conner57_gmail_com';
-		var template_id = 'template_dWqH2k70_clone';
-
-		emailjs.send(service_id, template_id, template_params);
+		document.querySelector('.RSVP-form').style.height = '125px'
+		// const form = e.target;
+		// const data = new FormData(form);
+		// const xhr = new XMLHttpRequest();
+		// xhr.open(form.method, form.action);
+		// xhr.setRequestHeader('Accept', 'application/json');
+		// xhr.onreadystatechange = () => {
+		// 	if (xhr.readyState !== XMLHttpRequest.DONE) return;
+		// };
+		// xhr.send(data);
 
 		document.querySelector('.RSVP-submit').style.display = 'block';
 	};
+
+	// action="https://formspree.io/mnqdgwjv" method="POST"
 
 	return (
 		<div className="container mx-auto">
@@ -38,8 +37,7 @@ function RSVP() {
 						</h4>
 					</div>
 					<hr />
-					<form onSubmit={handleSubmit}>
-						<input type="hidden" name="form-name" value="contact" />
+					<form onSubmit={handleSubmit} >
 						<div className="">
 							<input
 								type="text"
@@ -63,29 +61,29 @@ function RSVP() {
 							<label className="pr-3">Attending:</label>
 
 							<input
-								className="form-check-input"
+								className="RSVP-radio"
 								type="radio"
 								name="attending"
 								value="accept"
 								onChange={(e) => setRSVPForm(e.target.value)}
 							/>
-							<label className="form-check-label mr-3" for="inlineRadio1">
+							<label className="RSVP-label mr-3" htmlFor="inlineRadio1">
 								Accept
 							</label>
 
 							<input
-								className="form-check-input"
+								className="RSVP-radio"
 								type="radio"
 								name="attending"
 								value="decline"
 								onChange={(e) => setRSVPForm(e.target.value)}
 							/>
-							<label className="form-check-label" for="inlineRadio2">
+							<label className="RSVP-label" htmlFor="inlineRadio2">
 								Decline
 							</label>
 						</div>
 						<div>
-							<button type="submit" className="btn btn-light mt-2 border">
+							<button type="submit" className="RSVP-button">
 								Submit
 							</button>
 						</div>
