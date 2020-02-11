@@ -1,16 +1,25 @@
 import React from 'react';
 
-function Story() {
+function Registry() {
 	return (
-		<div className="container card">
-            <div className="border rounded m-auto p-2">
-                <a href="https://www.amazon.com/wedding/share/chrisandallison">
-                    <i class="fab fa-amazon fa-5x"/>
-                    <h4>Registry</h4>
-                </a>
-            </div>
+		<div className="container">
+			<h4 className="registry-title">Registry</h4>
+			<div className="registry">
+				<a className="shadow-lg" href="https://www.amazon.com/wedding/share/chrisandallison" target="_blank" rel="noopener noreferrer">
+					<img src="/media/registry/amazon-logo.png" />
+					<button>See our registry!</button>
+				</a>
+				<a className="shadow-lg" href="https://www.amazon.com/wedding/share/chrisandallison" target="_blank" rel="noopener noreferrer">
+					<img src="/media/registry/bed-bath-beyond-logo.png" />
+					<button>See our registry!</button>
+				</a>
+				<a className="shadow-lg" href="https://www.amazon.com/wedding/share/chrisandallison" target="_blank" rel="noopener noreferrer">
+					<img src="/media/registry/target-logo.png" />
+					<button>See our registry!</button>
+				</a>
+			</div>
 		</div>
 	);
 }
 
-export default Story;
+export default Registry;
