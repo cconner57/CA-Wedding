@@ -2,29 +2,31 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-    return (
-		<div>
-			<nav className="navbar bg-light justify-content-center m-3 shadow-sm">
-				<ul class="nav">
-					<li class="nav-item">
-						<Link class="nav-link" to="/">Home</Link>
-					</li>
-					<li class="nav-item">
-						<Link class="nav-link" to="/reception">Reception</Link>
-					</li>
-					<li class="nav-item">
-						<Link class="nav-link" to="/gallery">Gallery</Link>
-					</li>
-					<li class="nav-item">
-						<Link class="nav-link" to="/registry">Registry</Link>
-					</li>
-					<li class="nav-item">
-						<Link class="nav-link" to="/rsvp">RSVP</Link>
-					</li>
-				</ul>
-			</nav>
-		</div>
-    )
+	return (
+		<nav className="navbar-conatiner bg-light shadow-sm">
+			<div className="navbar-top">
+				<img src="/media/navbar/floral-left.png"/>
+				<Link to="/" className="navbar-name">
+					<h3>Chris &amp; Allison</h3>
+				</Link>
+				<img src="/media/navbar/floral-right.png"/>
+			</div>
+			<div className="navbar-row">
+				<Link to="/reception" className="navbar-link">
+					<p>Reception</p>
+				</Link>
+				<Link to="/gallery" className="navbar-link">
+					<p>Gallery</p>
+				</Link>
+				<Link to="/registry" className="navbar-link">
+					<p>Registry</p>
+				</Link>
+				<Link to="/rsvp" className="navbar-link">
+					<p>RSVP</p>
+				</Link>
+			</div>
+		</nav>
+	);
 }
 
 export default Navbar;
