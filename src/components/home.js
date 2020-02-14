@@ -1,42 +1,30 @@
-import React from 'react'
+import React from 'react';
+import ImageCarousel from './ImageCarousel';
 
 function Home() {
-    return (
-        <div className="container card">
-            <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-                <ol className="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div className="carousel-inner c-size rounded mt-3">
-                    <div className="carousel-item active position-i">
-                    <img src="/media/home/1.jpg" className="d-block w-100" alt="..."/>
-                    </div>
-                    <div className="carousel-item position-i">
-                    <img src="/media/home/2.jpg" className="d-block w-100" alt="..."/>
-                    </div>
-                    <div className="carousel-item position-i">
-                    <img src="/media/home/3.jpg" className="d-block w-100" alt="..."/>
-                    </div>
-                </div>
-                <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="sr-only">Previous</span>
-                </a>
-                <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="sr-only">Next</span>
-                </a>
-            </div>
-            <div className="Home-description">
-                <h1>Brief description of event + date</h1>
-            </div>
-            <div>
-                <h1>Wedding Party?</h1>
-            </div>
-        </div>
-    )
+	let countdown = () => {
+		let future = Date.parse('January 18, 2021');
+		let now = new Date();
+		let difference = future - now;
+
+		let days = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+		document.querySelector('.countdown').innerHTML = `<h4> ${days} days left</h4>`;
+	};
+	setInterval(countdown, 1000);
+
+	return (
+		<div className="container card">
+			<div className="countdown" />
+			<ImageCarousel />
+			<div className="Home-description">
+				<h1>Brief description of event + date</h1>
+			</div>
+			<div>
+				<h1>Wedding Party?</h1>
+			</div>
+		</div>
+	);
 }
 
-export default Home
+export default Home;

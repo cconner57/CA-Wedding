@@ -151,6 +151,24 @@ template {
 	display: none;
 }
 
+/* Media Breakpoints */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
 /* Theme Colors */
 /* Merlot #73343A
 Peach #FFE5B4
@@ -196,6 +214,16 @@ Sage #77815C */
 	text-decoration: none;
 }
 
+/* Home */
+
+.countdown {
+	color: black;
+}
+
+.Carousel-Indicator {
+	text-align: center;
+}
+
 /* Location  */
 
 .Location-image {
@@ -231,8 +259,10 @@ p {
 }
 
 .container {
-	margin: 0 10%;
-	/* background-color: red; */
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	margin-top: 35px;
 	text-align: center;
 }
 
@@ -255,17 +285,23 @@ p {
 
 /* Registry */
 
-.container .registry-title {
-	padding-bottom: 15px;
+.Registry-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 35px;
+	text-align: center;
 }
 
-.registry-title {
+.registry-title h4 {
 	text-decoration: underline;
+	padding-bottom: 30px;
+	margin-right: 25px;
 }
 
 .registry {
 	display: flex;
 	justify-content: space-evenly;
+	margin: 0 150px;
 }
 
 .registry a {
@@ -298,6 +334,13 @@ p {
 }
 
 /* RSVP */
+
+.RSVP-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 35px;
+	text-align: center;
+}
 
 .RSVP-form hr {
 	background: #73343a;
@@ -335,11 +378,12 @@ p {
 	background: white;
 	border: 1px solid #ffe5b4;
 	border-radius: 15px;
-	margin: 0 20%;
-	padding: 5%;
-	text-align: center;
-	max-width: 70%;
+	width: 75%;
+	max-width: 450px;
+	padding: 50px;
 	transition: all .5s ease;
+	height: 375px;
+	transition: height 400ms;
 }
 
 .RSVP-form h1 {
@@ -377,11 +421,6 @@ p {
 
 .RSVP-button:hover {
 	background: #ffe5b4;
-}
-
-.RSVP-form {
-	height: 350px;
-	transition: height 400ms;
 }
 
 .RSVP-submit {

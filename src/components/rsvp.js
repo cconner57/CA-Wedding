@@ -27,8 +27,8 @@ function RSVP() {
 	// action="https://formspree.io/mnqdgwjv" method="POST"
 
 	return (
-		<div className="container mx-auto">
-			<div className="RSVP-form shadow-lg mt-5">
+		<div className="RSVP-container">
+			<div className="RSVP-form shadow-lg">
 				<div className="RSVP-show">
 					<div className="RSVP-info">
 						<h4>Kindly Respond By</h4>
