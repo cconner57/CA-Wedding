@@ -2,16 +2,16 @@ import React from 'react';
 import ImageCarousel from './ImageCarousel';
 
 function Home() {
-	let countdown = () => {
-		let future = Date.parse('January 18, 2021');
-		let now = new Date();
-		let difference = future - now;
+	// let countdown = () => {
+	// 	let future = Date.parse('January 19, 2021');
+	// 	let now = new Date();
+	// 	let difference = future - now;
 
-		let days = Math.floor(difference / (1000 * 60 * 60 * 24));
+	// 	let days = Math.floor(difference / (1000 * 60 * 60 * 24));
 
-		document.querySelector('.countdown').innerHTML = `<h4> ${days} days left</h4>`;
-	};
-	setInterval(countdown, 1000);
+	// 	document.querySelector('.countdown').innerHTML = `<h4> ${days} days left</h4>`;
+	// };
+	// setInterval(countdown, 1000);
 
 	return (
 		<div className="container card">
