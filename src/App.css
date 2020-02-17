@@ -413,7 +413,6 @@ p {
 	width: 75%;
 	max-width: 450px;
 	padding: 50px;
-	transition: all .5s ease;
 	height: 375px;
 	transition: height 400ms;
 }
