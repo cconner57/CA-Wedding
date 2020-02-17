@@ -14,11 +14,11 @@ function App() {
 		<Router>
 			<Navbar />
 			<Switch>
+				<Route path="/" exact component={Home} />
 				<Route path="/gallery" component={Gallery} />
 				<Route path="/reception" component={Reception} />
 				<Route path="/registry" component={Registry} />
 				<Route path="/rsvp" component={RSVP} />
-				<Route path="/" component={Home} />
 			</Switch>
 		</Router>
 	);
