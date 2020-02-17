@@ -224,10 +224,46 @@ Sage #77815C */
 	text-align: center;
 }
 
-/* Location  */
+/* Reception  */
 
-.Location-image {
-	width: 50%;
+.Reception-container {
+	height: 88vh;
+	padding: 15px;
+	text-align: center;
+	background-image: url(/Media/ceremony.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.Reception-location {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 25px;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	margin: 8% 15%;
+	padding: 50px 0;
+	background-color: rgba(255, 255, 255, .9);
+}
+
+.Reception-text {
+	padding: 5px;
+	width: 350px;
+	height: 150px;
+}
+
+.Reception-text h4 {
+	text-decoration: underline;
+	padding: 20px 0px;
+	font-weight: 500;
+}
+
+iframe {
+	border: 2px solid lightgray;
+	border-radius: 15px;
+	width: 400px;
+	height: 300px;
 }
 
 a {
@@ -239,10 +275,6 @@ a:hover {
 	color: rgb(182, 182, 182);
 	transition: all .5s ease;
 	text-decoration: none;
-}
-
-body {
-	color: white;
 }
 
 h2,

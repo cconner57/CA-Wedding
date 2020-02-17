@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Navbar from './components/navbar';
 import Gallery from './components/gallery';
-import Reception from './components/location';
+import Reception from './components/reception';
 import RSVP from './components/rsvp';
 import Registry from './components/registry';
 import Landing from './components/home';
