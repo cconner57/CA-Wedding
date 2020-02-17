@@ -10,7 +10,7 @@ function RSVP() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		document.querySelector('.RSVP-show').style.display = 'none';
-		document.querySelector('.RSVP-form').style.height = '125px'
+		document.querySelector('.RSVP-form').style.height = '165px'
 		// const form = e.target;
 		// const data = new FormData(form);
 		// const xhr = new XMLHttpRequest();
