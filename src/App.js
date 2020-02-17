@@ -7,18 +7,18 @@ import Gallery from './components/gallery';
 import Reception from './components/reception';
 import RSVP from './components/rsvp';
 import Registry from './components/registry';
-import Landing from './components/home';
+import Home from './components/home';
 
 function App() {
 	return (
 		<Router>
 			<Navbar />
 			<Switch>
-				<Route path="/" exact component={Landing} />
 				<Route path="/gallery" component={Gallery} />
 				<Route path="/reception" component={Reception} />
 				<Route path="/registry" component={Registry} />
 				<Route path="/rsvp" component={RSVP} />
+				<Route path="/" component={Home} />
 			</Switch>
 		</Router>
 	);
