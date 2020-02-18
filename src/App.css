@@ -359,7 +359,7 @@ p {
 .Gallery-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 20px;
+	margin: 20px 20% 0px;
 	text-align: center;
 	animation: fadein 1s;
 }
@@ -372,7 +372,7 @@ p {
 }
 
 .carousel {
-	width: 40%;
+	width: 300px;
 	margin-bottom: 10px;
 	animation: fadein 2s;
 }
@@ -385,7 +385,7 @@ p {
 .Gallery-img {
 	border: 1px solid lightgrey;
 	border-radius: 10px;
-	margin-bottom: 15px;
+	margin: 0px 5% 15px;
 	animation: fadein 2s;
 }
 

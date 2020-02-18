@@ -16,7 +16,7 @@ function Gallery() {
 	});
 
 	return (
-		<div className="container card">
+		<div className="Gallery-container card">
 			<h2 className="Gallery-title">Engagement Photos</h2>
 			<ImageCarousel />
 			<div className="Gallery-img">
