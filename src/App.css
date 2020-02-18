@@ -228,23 +228,31 @@ Sage #77815C */
 	background-image: url('/media/proposal.jpg');
 	background-size: cover;
 	background-position: center;
+	-webkit-animation: fadein 1s;
+	-moz-animation: fadein 1s;
+	-o-animation: fadein 1s;
 	animation: fadein 1s;
-	/* height: 475px; */
 }
 
 .Home-title {
-	background: rgba(255, 255, 255, .7);
+	background: rgba(255, 255, 255, .9);
 	border-radius: 5px;
 	padding: 15px;
-	animation: fadein 9s;
+	-webkit-animation: fadein 7s;
+	-moz-animation: fadein 7s;
+	-o-animation: fadein 7s;
+	animation: fadein 7s;
 }
 
 .Home-body {
-	background: rgba(255, 255, 255, .7);
+	background: rgba(255, 255, 255, .9);
 	border-radius: 5px;
 	padding: 20px 30px;
 	margin: 25px 15%;
-	animation: fadein 9s;
+	-webkit-animation: fadein 7s;
+	-moz-animation: fadein 7s;
+	-o-animation: fadein 7s;
+	animation: fadein 7s;
 	font-weight: 500;
 }
 
@@ -257,13 +265,16 @@ Sage #77815C */
 }
 
 .countdown {
-	background: rgba(255, 255, 255, .7);
+	background: rgba(255, 255, 255, .9);
 	border-radius: 5px;
 	/* padding: 5px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	animation: fadein 9s;
+	-webkit-animation: fadein 7s;
+	-moz-animation: fadein 7s;
+	-o-animation: fadein 7s;
+	animation: fadein 7s;
 	font-weight: 500;
 }
 
@@ -272,9 +283,46 @@ Sage #77815C */
 	padding: 10px;
 }
 
+@-webkit-keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-o-keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 @keyframes fadein {
-	0% { opacity: 0; }
-	100%   { opacity: 1; }
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 /* Reception  */
@@ -287,6 +335,9 @@ Sage #77815C */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	-webkit-animation: fadein 1s;
+	-moz-animation: fadein 1s;
+	-o-animation: fadein 1s;
 	animation: fadein 1s;
 }
 
@@ -299,6 +350,9 @@ Sage #77815C */
 	margin: 8% 15%;
 	padding: 50px 0;
 	background-color: rgba(255, 255, 255, .9);
+	-webkit-animation: fadein 2s;
+	-moz-animation: fadein 2s;
+	-o-animation: fadein 2s;
 	animation: fadein 2s;
 }
 
@@ -351,6 +405,9 @@ p {
 	justify-content: center;
 	margin-top: 35px;
 	text-align: center;
+	-webkit-animation: fadein 1s;
+	-moz-animation: fadein 1s;
+	-o-animation: fadein 1s;
 	animation: fadein 1s;
 }
 
@@ -361,6 +418,9 @@ p {
 	justify-content: center;
 	margin: 20px 20% 0px;
 	text-align: center;
+	-webkit-animation: fadein 1s;
+	-moz-animation: fadein 1s;
+	-o-animation: fadein 1s;
 	animation: fadein 1s;
 }
 
@@ -368,12 +428,18 @@ p {
 	background: rgba(211, 211, 211, .4);
 	margin: 10px 10px 0px;
 	border-radius: 5px;
+	-webkit-animation: fadein 2s;
+	-moz-animation: fadein 2s;
+	-o-animation: fadein 2s;
 	animation: fadein 2s;
 }
 
 .carousel {
 	width: 300px;
 	margin-bottom: 10px;
+	-webkit-animation: fadein 2s;
+	-moz-animation: fadein 2s;
+	-o-animation: fadein 2s;
 	animation: fadein 2s;
 }
 
@@ -386,6 +452,9 @@ p {
 	border: 1px solid lightgrey;
 	border-radius: 10px;
 	margin: 0px 5% 15px;
+	-webkit-animation: fadein 2s;
+	-moz-animation: fadein 2s;
+	-o-animation: fadein 2s;
 	animation: fadein 2s;
 }
 
@@ -416,6 +485,9 @@ p {
 	flex-direction: column;
 	margin-top: 35px;
 	text-align: center;
+	-webkit-animation: fadein 2s;
+	-moz-animation: fadein 2s;
+	-o-animation: fadein 2s;
 	animation: fadein 2s;
 }
 
@@ -467,6 +539,9 @@ p {
 	justify-content: center;
 	margin-top: 35px;
 	text-align: center;
+	-webkit-animation: fadein 2s;
+	-moz-animation: fadein 2s;
+	-o-animation: fadein 2s;
 	animation: fadein 2s;
 }
 
