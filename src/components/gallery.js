@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageCarousel from './ImageCarousel';
 
 const photos = [
 	'/media/gallery/1.jpg',
@@ -10,15 +11,17 @@ const photos = [
 ];
 
 function Gallery() {
-	const galleryCard = photos.map((i) => {
-		return <img key={i} class="img-thumbnail overflow-hidden c-image" src={i} />;
+	const galleryCard = photos.map(i => {
+		return <img key={i} className="overflow-hidden c-image" src={i} />;
 	});
 
 	return (
 		<div className="container card">
-			<h2 class="card-header">Engagement Photos</h2>
-			<div className="row-fluid">{galleryCard}</div>
-			<hr />
+			<h2 className="Gallery-title">Engagement Photos</h2>
+			<ImageCarousel />
+			<div className="Gallery-img">
+				<div className="row-fluid">{galleryCard}</div>
+			</div>
 		</div>
 	);
 }
