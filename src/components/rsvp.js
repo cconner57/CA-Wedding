@@ -11,20 +11,20 @@ function RSVP() {
 		e.preventDefault();
 		document.querySelector('.RSVP-show').style.display = 'none';
 		document.querySelector('.RSVP-form').style.height = '165px'
-		// const form = e.target;
-		// const data = new FormData(form);
-		// const xhr = new XMLHttpRequest();
-		// xhr.open(form.method, form.action);
-		// xhr.setRequestHeader('Accept', 'application/json');
-		// xhr.onreadystatechange = () => {
-		// 	if (xhr.readyState !== XMLHttpRequest.DONE) return;
-		// };
-		// xhr.send(data);
+		const form = e.target;
+		const data = new FormData(form);
+		const xhr = new XMLHttpRequest();
+		xhr.open(form.method, form.action);
+		xhr.setRequestHeader('Accept', 'application/json');
+		xhr.onreadystatechange = () => {
+			if (xhr.readyState !== XMLHttpRequest.DONE) return;
+		};
+		xhr.send(data);
 
 		document.querySelector('.RSVP-submit').style.display = 'block';
 	};
 
-	// action="https://formspree.io/mnqdgwjv" method="POST"
+	
 
 	return (
 		<div className="RSVP-container">
@@ -37,7 +37,7 @@ function RSVP() {
 						</h4>
 					</div>
 					<hr />
-					<form onSubmit={handleSubmit} >
+					<form onSubmit={handleSubmit} action="https://formspree.io/mnqdgwjv" method="POST">
 						<div className="">
 							<input
 								type="text"
