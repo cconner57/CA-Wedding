@@ -10,7 +10,7 @@ function RSVP() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		document.querySelector('.RSVP-show').style.display = 'none';
-		document.querySelector('.RSVP-form').style.height = '165px'
+		document.querySelector('.RSVP-form').style.height = '165px';
 		const form = e.target;
 		const data = new FormData(form);
 		const xhr = new XMLHttpRequest();
@@ -23,8 +23,6 @@ function RSVP() {
 
 		document.querySelector('.RSVP-submit').style.display = 'block';
 	};
-
-	
 
 	return (
 		<div className="RSVP-container">
@@ -64,6 +62,7 @@ function RSVP() {
 								className="RSVP-radio"
 								type="radio"
 								name="attending"
+								required
 								value="accept"
 								onChange={(e) => setRSVPForm(e.target.value)}
 							/>
@@ -90,8 +89,8 @@ function RSVP() {
 					</form>
 				</div>
 				<div className="RSVP-submit">
-					<h4>RSVP Sent</h4>
-					<h5>Thank you, {rsvpForm.name}</h5>
+					<h4>RSVP Sent,</h4>
+					<h5>Thank you {rsvpForm.name}</h5>
 				</div>
 			</div>
 		</div>
