@@ -3,9 +3,9 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 
 /* Theme Colors */
-$primary-color: #73343A;
+/* $primary-color: #73343A;
 $secondary-color: #FFE5B4;
-$accent-color: #77815C;
+$accent-color: #77815C; */
 
 /* CSS Normalize */
 
@@ -201,7 +201,6 @@ textarea {
 .countdown {
 	background: rgba(255, 255, 255, .9);
 	border-radius: 5px;
-	/* padding: 5px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -241,15 +240,6 @@ textarea {
 		opacity: 1;
 	}
 }
-@keyframes fadein {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
 @keyframes fadein {
 	0% {
 		opacity: 0;
@@ -335,7 +325,6 @@ p {
 
 .container {
 	display: flex;
-	/* flex-direction: column; */
 	justify-content: center;
 	margin-top: 35px;
 	text-align: center;
@@ -524,9 +513,6 @@ p {
 
 .RSVP-form h1 {
 	font-family: 'Dancing Script', cursive;
-}
-
-.RSVP-form h1 {
 	color: black;
 }
 
