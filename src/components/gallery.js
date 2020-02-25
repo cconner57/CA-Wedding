@@ -12,7 +12,7 @@ const photos = [
 
 function Gallery() {
 	const galleryCard = photos.map(i => {
-		return <img key={i} className="overflow-hidden c-image" src={i} />;
+		return <img key={i} className="overflow-hidden c-image" src={i} alt="Engagement Photos" />;
 	});
 
 	return (

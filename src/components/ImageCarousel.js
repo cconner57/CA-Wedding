@@ -2,7 +2,7 @@ import React from 'react';
 
 function ImageCarousel() {
 	return (
-		<div className="Gallery-container">
+		<div className="Carousel-container">
 			<div className="carousel slide" data-ride="carousel">
 				<ol className="carousel-indicators">
 					<li data-slide-to="0" className="active" />

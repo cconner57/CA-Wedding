@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
 	return (
-		<nav className="navbar-conatiner bg-light shadow-sm">
+		<nav className="navbar-container">
 			<div className="navbar-top">
-				<img src="/media/navbar/floral-left.png"/>
+				<img src="/media/navbar/floral-left.png" alt="flowers"/>
 				<Link to="/" className="navbar-name">
 					<h3>Chris &amp; Allison</h3>
 				</Link>
-				<img src="/media/navbar/floral-right.png"/>
+				<img src="/media/navbar/floral-right.png" alt="flowers"/>
 			</div>
 			<div className="navbar-row">
 				<Link to="/reception" className="navbar-link">
