@@ -13,9 +13,9 @@ function Home() {
 
 	return (
 		<div className="Home-container">
-			<h2 className="Home-title">Come Celebrate Our Wedding!</h2>
+			<h2>Come Celebrate Our Wedding!</h2>
 			<div className="Home-body">
-				<img className="Home-img" src="/media/engagement.jpeg"/>
+				<img src="/media/engagement.jpeg" alt="Engagement" />
 				<p>Monday, January 18, 2021</p>
 				<p>
 					Chris and Allison joyfully request the pleasure of your company as we speak our vows and join in

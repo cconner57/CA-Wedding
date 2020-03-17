@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 /* Theme Colors */
+/* Mixins */
 /* CSS Normalize */
 html {
   line-height: 1.15;
@@ -26,8 +27,7 @@ img {
 }
 
 button,
-input,
-textarea {
+input {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -65,23 +65,14 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
 textarea {
   overflow: auto;
 }
 
-[type='checkbox'],
 [type='radio'] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
-}
-
-[hidden] {
-  display: none;
 }
 
 /* Media Breakpoints */
@@ -110,7 +101,7 @@ textarea {
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
-.navbar-top {
+.navbar-container .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,20 +111,20 @@ textarea {
   padding: 10px 0px 5px;
 }
 
-.navbar-name h3 {
+.navbar-container .navbar-top .navbar-name h3 {
   color: rgba(0, 0, 0, 0.8);
   margin: 5px 15px;
   font-family: 'Sulphur', serif;
 }
 
-.navbar-name h3:hover {
+.navbar-container .navbar-top .navbar-name h3:hover {
   color: #b6b6b6;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   text-decoration: none;
 }
 
-.navbar-row {
+.navbar-container .navbar-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,13 +134,20 @@ textarea {
   margin: 0px 25%;
 }
 
-.navbar-link p {
+.navbar-container .navbar-row .navbar-link p {
   font-size: 16px;
   font-weight: 500;
   color: #464646;
 }
 
-.navbar-link p:hover {
+.navbar-container .navbar-row .navbar-link p:hover {
+  color: #b6b6b6;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  text-decoration: none;
+}
+
+.navbar-container a:hover {
   color: #b6b6b6;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -161,13 +159,13 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   border: 1px solid #ffe5b4;
   margin: 2% 10%;
@@ -180,7 +178,7 @@ textarea {
   animation: fadein 1s;
 }
 
-.Home-title {
+.Home-container h2 {
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #ffe5b4;
   border-radius: 5px;
@@ -191,23 +189,23 @@ textarea {
   animation: fadein 7s;
 }
 
-.Home-body {
+.Home-container .Home-body {
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #ffe5b4;
   border-radius: 5px;
   padding: 20px 30px;
   margin: 25px 15%;
   font-family: 'Dancing', serif;
+  font-weight: 500;
   -webkit-animation: fadein 7s;
   animation: fadein 7s;
-  font-weight: 500;
 }
 
-.Home-body p {
+.Home-container .Home-body p {
   margin: 1% 10%;
 }
 
-.Home-img {
+.Home-container .Home-body img {
   width: 200px;
   height: 250px;
   border-radius: 50%;
@@ -215,7 +213,7 @@ textarea {
   border: 1px solid gray;
 }
 
-.countdown {
+.Home-container .countdown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,27 +234,9 @@ textarea {
   animation: fadein 7s;
 }
 
-.countdown p {
+.Home-container .countdown p {
   margin: 0;
   padding: 10px;
-}
-
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /* Reception  */
@@ -272,7 +252,7 @@ textarea {
   animation: fadein 1s;
 }
 
-.Reception-location {
+.Reception-container .Reception-location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,58 +268,20 @@ textarea {
   animation: fadein 2s;
 }
 
-.Reception-text {
+.Reception-container .Reception-location .Reception-text {
   padding: 1% 5%;
 }
 
-.Reception-text h4 {
+.Reception-container .Reception-location .Reception-text h4 {
   text-decoration: underline;
   padding: 20px 0px;
   font-weight: 500;
 }
 
-iframe {
+.Reception-container .Reception-location iframe {
   border: 2px solid #77815c;
   border-radius: 15px;
   width: 45%;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  color: #b6b6b6;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  text-decoration: none;
-}
-
-h2,
-h4 {
-  color: black;
-}
-
-input[type=submit] {
-  font-family: 'Dosis', sans-serif;
-}
-
-p {
-  color: black;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 35px;
-  text-align: center;
-  -webkit-animation: fadein 1s;
-  animation: fadein 1s;
 }
 
 /* Gallery */
@@ -358,7 +300,7 @@ p {
   animation: fadein 1s;
 }
 
-.Gallery-title {
+.Gallery-container h2 {
   background: rgba(211, 211, 211, 0.4);
   margin: 10px 10px 0px;
   border: 1px solid #77815c;
@@ -368,6 +310,28 @@ p {
   animation: fadein 2s;
 }
 
+.Gallery-container .Gallery-img {
+  border: 1px solid #77815c;
+  border-radius: 10px;
+  margin: 0px 5% 15px;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+.Gallery-container .Gallery-img .Gallery-image {
+  height: 100px;
+  border-radius: 5px;
+  margin: 10px 5px;
+}
+
+.Gallery-container .Gallery-img .Gallery-image:hover {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* Carousel */
 .Carousel-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -378,46 +342,16 @@ p {
   margin: 2%;
 }
 
-.carousel {
+.Carousel-container .carousel {
   width: 300px;
   margin-bottom: 10px;
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
 }
 
-.carousel-item img {
+.Carousel-container .carousel-item img {
   height: 400px;
   border-radius: 5px;
-}
-
-.Gallery-img {
-  border: 1px solid #77815c;
-  border-radius: 10px;
-  margin: 0px 5% 15px;
-  -webkit-animation: fadein 2s;
-  animation: fadein 2s;
-}
-
-.c-image {
-  height: 100px;
-  border-radius: 5px;
-  margin: 10px 5px;
-}
-
-.c-image:hover {
-  -webkit-transform: scale(1.8);
-          transform: scale(1.8);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.c-size {
-  width: auto;
-  height: 600px;
-}
-
-.ceremony h1 {
-  font-family: 'Dancing Script', cursive;
 }
 
 /* Registry */
@@ -435,12 +369,12 @@ p {
   animation: fadein 2s;
 }
 
-.registry-title h4 {
+.Registry-container h4 {
   padding-bottom: 30px;
   margin-right: 25px;
 }
 
-.registry {
+.Registry-container .Registry {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,7 +384,7 @@ p {
   margin: 0 150px;
 }
 
-.registry a {
+.Registry-container .Registry a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,13 +397,13 @@ p {
   padding: 10px;
 }
 
-.registry img {
+.Registry-container .Registry img {
   max-height: 70px;
   margin: 10px;
   padding: 15px;
 }
 
-.registry button {
+.Registry-container .Registry button {
   margin: 0px 10px 10px;
   padding: 10px;
   font-weight: bold;
@@ -480,7 +414,7 @@ p {
   font-family: 'Dancing', serif;
 }
 
-.registry button:hover {
+.Registry-container .Registry button:hover {
   background: #ffe5b4;
   text-decoration: none;
 }
@@ -499,51 +433,7 @@ p {
   animation: fadein 2s;
 }
 
-.RSVP-form hr {
-  background: #73343a;
-}
-
-.input-name {
-  margin: 10px;
-  padding: 5px;
-  width: 85%;
-  background: white;
-  border-radius: 5px;
-  border: 1px solid gold;
-  border-bottom: 1px solid #77815c;
-}
-
-.input-song {
-  margin: 10px;
-  padding: 5px;
-  width: 85%;
-  background: white;
-  border-radius: 5px;
-  border: 1px solid gold;
-  border-bottom: 1px solid #77815c;
-}
-
-::-webkit-input-placeholder {
-  color: black;
-}
-
-:-ms-input-placeholder {
-  color: black;
-}
-
-::-ms-input-placeholder {
-  color: black;
-}
-
-::placeholder {
-  color: black;
-}
-
-.position-i {
-  top: -125px;
-}
-
-.RSVP-form {
+.RSVP-container .RSVP-form {
   background: white;
   border: 1px solid #ffe5b4;
   border-radius: 15px;
@@ -555,41 +445,104 @@ p {
   transition: height 400ms;
 }
 
-.RSVP-form h1 {
+.RSVP-container .RSVP-form h1 {
   font-family: 'Dancing Script', cursive;
   color: black;
 }
 
-.RSVP-radio {
+.RSVP-container .RSVP-form h4,
+.RSVP-container .RSVP-form h5,
+.RSVP-container .RSVP-form form {
+  font-family: 'Dosis', sans-serif;
+  color: black;
+}
+
+.RSVP-container .RSVP-form hr {
+  background: #73343a;
+}
+
+.RSVP-container .RSVP-form .input-name {
+  margin: 10px;
+  padding: 5px;
+  width: 85%;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid gold;
+  border-bottom: 1px solid #77815c;
+}
+
+.RSVP-container .RSVP-form .input-song {
+  margin: 10px;
+  padding: 5px;
+  width: 85%;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid gold;
+  border-bottom: 1px solid #77815c;
+}
+
+.RSVP-container .RSVP-form .RSVP-radio {
   background-color: gold;
   cursor: pointer;
   margin: 0px 3px 6px 0px;
 }
 
-.RSVP-radio:checked {
+.RSVP-container .RSVP-form .RSVP-radio:checked {
   background: black;
 }
 
-.RSVP-form h4,
-.RSVP-form h5,
-.RSVP-form form {
-  font-family: 'Dosis', sans-serif;
-  color: black;
-}
-
-.RSVP-button {
+.RSVP-container .RSVP-form .RSVP-button {
   background: white;
   margin-top: 10px;
   padding: 5px 10px;
   border: 1px solid gold;
   border-radius: 5px;
+  font-family: 'Dosis', sans-serif;
 }
 
-.RSVP-button:hover {
+.RSVP-container .RSVP-form .RSVP-button:hover {
   background: #ffe5b4;
+}
+
+.RSVP-container .RSVP-form ::-webkit-input-placeholder {
+  color: black;
+}
+
+.RSVP-container .RSVP-form :-ms-input-placeholder {
+  color: black;
+}
+
+.RSVP-container .RSVP-form ::-ms-input-placeholder {
+  color: black;
+}
+
+.RSVP-container .RSVP-form ::placeholder {
+  color: black;
+}
+
+.position-i {
+  top: -125px;
 }
 
 .RSVP-submit {
   display: none;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=App.css.map */

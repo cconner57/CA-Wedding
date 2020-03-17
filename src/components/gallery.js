@@ -12,12 +12,12 @@ const photos = [
 
 function Gallery() {
 	const galleryCard = photos.map(i => {
-		return <img key={i} className="overflow-hidden c-image" src={i} alt="Engagement Photos" />;
+		return <img key={i} className="overflow-hidden Gallery-image" src={i} alt="Engagement Photos" />;
 	});
 
 	return (
 		<div className="Gallery-container card">
-			<h2 className="Gallery-title">Engagement Photos</h2>
+			<h2>Engagement Photos</h2>
 			<ImageCarousel />
 			<div className="Gallery-img">
 				<div className="row-fluid">{galleryCard}</div>

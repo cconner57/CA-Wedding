@@ -28,36 +28,29 @@ function RSVP() {
 		<div className="RSVP-container">
 			<div className="RSVP-form shadow-lg">
 				<div className="RSVP-show">
-					<div className="RSVP-info">
-						<h4>Kindly Respond By</h4>
-						<h4>
-							November 18<sup>th</sup>, 2020
-						</h4>
-					</div>
+					<h4>Kindly Respond By</h4>
+					<h4>
+						November 18<sup>th</sup>, 2020
+					</h4>
 					<hr />
 					<form onSubmit={handleSubmit} action="https://formspree.io/mnqdgwjv" method="POST">
-						<div className="">
-							<input
-								type="text"
-								className="input-name"
-								name="name"
-								placeholder="First &amp; Last Name"
-								required
-								onChange={(e) => setRSVPForm(e.target.value)}
-							/>
-						</div>
-						<div className="">
-							<textarea
-								type="textarea"
-								className="input-song"
-								name="song"
-								placeholder="Song request"
-								onChange={(e) => setRSVPForm(e.target.value)}
-							/>
-						</div>
+						<input
+							type="text"
+							className="input-name"
+							name="name"
+							placeholder="First &amp; Last Name"
+							required
+							onChange={(e) => setRSVPForm(e.target.value)}
+						/>
+						<textarea
+							type="textarea"
+							className="input-song"
+							name="song"
+							placeholder="Song request"
+							onChange={(e) => setRSVPForm(e.target.value)}
+						/>
 						<div className="form-check form-check-inline">
 							<label className="pr-3">Attending:</label>
-
 							<input
 								className="RSVP-radio"
 								type="radio"
@@ -69,7 +62,6 @@ function RSVP() {
 							<label className="RSVP-label mr-3" htmlFor="inlineRadio1">
 								Accept
 							</label>
-
 							<input
 								className="RSVP-radio"
 								type="radio"
