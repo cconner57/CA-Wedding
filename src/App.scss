@@ -106,20 +106,107 @@ textarea {
 /* Media Breakpoints */
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
+	.navbar-container {
+		.navbar-row {
+			margin: 0;
+		}
+	}
+	.Home-container {
+		margin: 5%;
+		padding: 0px;
+		border: none;
+		background: none;
+		h2 {
+			margin: 0;
+		}
+	}
 	iframe {
 		display: none;
 	}
+	.Registry {
+		flex-direction: column;
+		margin: 0 50px;
+		a {
+			margin: 15px 40px;
+		}
+	}
+	.RSVP-form {
+		height: 400px;
+	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 850px) {
+	.navbar-container {
+		.navbar-row {
+			margin: 0px 25%;
+		}
+	}
+	.Home-container {
+		margin: 5% 10%;
+		padding: 25px;
+		border: 1px solid $secondary-color;
+		border-radius: 10px;
+		background-image: url('/media/proposal.jpg');
+		background-size: cover;
+		background-position: center;
+		h2 {
+			margin: 0 5%;
+		}
+	}
 	.Reception-text a {
 		display: none;
+	}
+	.Registry-container {
+		margin: 201px 0;
+	}
+	.Registry {
+		flex-direction: column;
+		margin: 0 200px;
+		a {
+			margin: 15px 40px;
+		}
+	}
+	.RSVP-form {
+		height: 375px;
 	}
 }
 
 @media only screen and (min-width: 1024px) {
-	.Reception-text a {
-		display: none;
+	.navbar-container {
+		.navbar-row {
+			margin: 0px 25%;
+		}
+	}
+	.Home-container {
+		margin: 5% 10%;
+		padding: 25px;
+		border: 1px solid $secondary-color;
+		border-radius: 10px;
+		background-image: url('/media/proposal.jpg');
+		background-size: cover;
+		background-position: center;
+		h2 {
+			margin: 0 5%;
+		}
+	}
+	
+	.Registry-container {
+		h4 {
+			padding-bottom: 30px;
+			margin-right: 25px;
+		}
+		.Reception-text a {
+			display: none;
+		}
+		.Registry {
+			margin: 0 150px;
+			a {
+				margin: 0 25px;
+			}
+		}
+	}
+	.RSVP-form {
+		height: 375px;
 	}
 }
 
@@ -144,7 +231,6 @@ textarea {
 	}
 	.navbar-row {
 		@include container(space-evenly);
-		margin: 0px 25%;
 		.navbar-link {
 			p {
 				font-size: 16px;
@@ -167,13 +253,6 @@ textarea {
 	@include container(center);
 	flex-direction: column;
 	text-align: center;
-	border: 1px solid $secondary-color;
-	margin: 2% 10%;
-	padding: 25px;
-	border-radius: 10px;
-	background-image: url('/media/proposal.jpg');
-	background-size: cover;
-	background-position: center;
 	@include fade(1s);
 	h2 {
 		background: rgba(255, 255, 255, .9);
@@ -181,8 +260,7 @@ textarea {
 		border-radius: 5px;
 		padding: 15px;
 		font-family: 'Sulphur', serif;
-		margin: 0 5%;
-		@include fade(7s);
+		@include fade(5s);
 	}
 	.Home-body {
 		background: rgba(255, 255, 255, .9);
@@ -192,7 +270,7 @@ textarea {
 		margin: 25px 15%;
 		font-family: 'Dancing', serif;
 		font-weight: 500;
-		@include fade(7s);
+		@include fade(5s);
 		p {
 			margin: 1% 10%;
 		}
@@ -214,7 +292,7 @@ textarea {
 		font-size: 18px;
 		font-weight: 500;
 		margin: 0 5%;
-		@include fade(7s);
+		@include fade(5s);
 		p {
 			margin: 0;
 			padding: 10px;
@@ -237,7 +315,7 @@ textarea {
 		@include container(space-evenly);
 		border: 1px solid $secondary-color;
 		border-radius: 10px;
-		margin: 2% 10%;
+		margin: 5% 10%;
 		padding: 5% 0;
 		background-color: rgba(255, 255, 255, .8);
 		@include fade(2s);
@@ -264,7 +342,7 @@ textarea {
 	border: 1px solid $secondary-color;
 	margin: 20px 20% 0px;
 	text-align: center;
-	margin: 2% 10%;
+	margin: 5% 10%;
 	@include fade(1s);
 	h2 {
 		background: rgba(211, 211, 211, .4);
@@ -314,16 +392,11 @@ textarea {
 .Registry-container {
 	display: flex;
 	flex-direction: column;
-	margin: 2% 10%;
+	margin: 5% 10%;
 	text-align: center;
 	@include fade(2s);
-	h4 {
-		padding-bottom: 30px;
-		margin-right: 25px;
-	}
 	.Registry {
 		@include container(space-evenly);
-		margin: 0 150px;
 		a {
 			display: flex;
 			flex-direction: column;
@@ -357,7 +430,7 @@ textarea {
 
 .RSVP-container {
 	@include container(center);
-	margin: 3% 10%;
+	margin: 5% 10%;
 	text-align: center;
 	@include fade(2s);
 	.RSVP-form {
@@ -367,7 +440,6 @@ textarea {
 		width: 75%;
 		max-width: 450px;
 		padding: 50px;
-		height: 375px;
 		transition: height 400ms;
 		h1 {
 			font-family: 'Dancing Script', cursive;
@@ -380,7 +452,7 @@ textarea {
 			color: black;
 		}
 		hr {
-			background: #73343a;
+			background: lightgray;
 		}
 		.input-name {
 			margin: 10px;

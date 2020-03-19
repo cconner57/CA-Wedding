@@ -12,7 +12,7 @@ function Registry() {
 					rel="noopener noreferrer"
 				>
 					<img src="/media/registry/amazon-logo.png" alt="Amazon" />
-					<button>See our registry!</button>
+					<button>See registry!</button>
 				</a>
 				<a
 					className="shadow-lg"
@@ -21,7 +21,7 @@ function Registry() {
 					rel="noopener noreferrer"
 				>
 					<img src="/media/registry/bed-bath-beyond-logo.png" alt="Bed Bath and Beyond" />
-					<button>See our registry!</button>
+					<button>See registry!</button>
 				</a>
 				<a
 					className="shadow-lg"
@@ -30,7 +30,7 @@ function Registry() {
 					rel="noopener noreferrer"
 				>
 					<img src="/media/registry/target-logo.png" alt="Target" />
-					<button>See our registry!</button>
+					<button>See registry!</button>
 				</a>
 			</div>
 		</div>

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 function Location() {
 	return (
@@ -14,7 +14,7 @@ function Location() {
 						Click for Directions
 					</a>
 				</div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13209.24886026702!2d-117.7679308!3d34.1383536!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe452ea9c719ae746!2sSierra%20La%20Verne%20Wedgewood%20Weddings!5e0!3m2!1sen!2sus!4v1581910801052!5m2!1sen!2sus" />
+				<iframe title="Reception Location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13209.24886026702!2d-117.7679308!3d34.1383536!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe452ea9c719ae746!2sSierra%20La%20Verne%20Wedgewood%20Weddings!5e0!3m2!1sen!2sus!4v1581910801052!5m2!1sen!2sus" />
 			</div>
 		</div>
 	);

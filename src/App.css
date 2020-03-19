@@ -77,20 +77,104 @@ textarea {
 
 /* Media Breakpoints */
 @media only screen and (min-width: 480px) and (max-width: 768px) {
+  .navbar-container .navbar-row {
+    margin: 0;
+  }
+  .Home-container {
+    margin: 5%;
+    padding: 0px;
+    border: none;
+    background: none;
+  }
+  .Home-container h2 {
+    margin: 0;
+  }
   iframe {
     display: none;
   }
+  .Registry {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 50px;
+  }
+  .Registry a {
+    margin: 15px 40px;
+  }
+  .RSVP-form {
+    height: 400px;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 850px) {
+  .navbar-container .navbar-row {
+    margin: 0px 25%;
+  }
+  .Home-container {
+    margin: 5% 10%;
+    padding: 25px;
+    border: 1px solid #ffe5b4;
+    border-radius: 10px;
+    background-image: url("/media/proposal.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .Home-container h2 {
+    margin: 0 5%;
+  }
   .Reception-text a {
     display: none;
+  }
+  .Registry-container {
+    margin: 201px 0;
+  }
+  .Registry {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 200px;
+  }
+  .Registry a {
+    margin: 15px 40px;
+  }
+  .RSVP-form {
+    height: 375px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .Reception-text a {
+  .navbar-container .navbar-row {
+    margin: 0px 25%;
+  }
+  .Home-container {
+    margin: 5% 10%;
+    padding: 25px;
+    border: 1px solid #ffe5b4;
+    border-radius: 10px;
+    background-image: url("/media/proposal.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .Home-container h2 {
+    margin: 0 5%;
+  }
+  .Registry-container h4 {
+    padding-bottom: 30px;
+    margin-right: 25px;
+  }
+  .Registry-container .Reception-text a {
     display: none;
+  }
+  .Registry-container .Registry {
+    margin: 0 150px;
+  }
+  .Registry-container .Registry a {
+    margin: 0 25px;
+  }
+  .RSVP-form {
+    height: 375px;
   }
 }
 
@@ -131,7 +215,6 @@ textarea {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 0px 25%;
 }
 
 .navbar-container .navbar-row .navbar-link p {
@@ -167,13 +250,6 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  border: 1px solid #ffe5b4;
-  margin: 2% 10%;
-  padding: 25px;
-  border-radius: 10px;
-  background-image: url("/media/proposal.jpg");
-  background-size: cover;
-  background-position: center;
   -webkit-animation: fadein 1s;
   animation: fadein 1s;
 }
@@ -184,9 +260,8 @@ textarea {
   border-radius: 5px;
   padding: 15px;
   font-family: 'Sulphur', serif;
-  margin: 0 5%;
-  -webkit-animation: fadein 7s;
-  animation: fadein 7s;
+  -webkit-animation: fadein 5s;
+  animation: fadein 5s;
 }
 
 .Home-container .Home-body {
@@ -197,8 +272,8 @@ textarea {
   margin: 25px 15%;
   font-family: 'Dancing', serif;
   font-weight: 500;
-  -webkit-animation: fadein 7s;
-  animation: fadein 7s;
+  -webkit-animation: fadein 5s;
+  animation: fadein 5s;
 }
 
 .Home-container .Home-body p {
@@ -230,8 +305,8 @@ textarea {
   font-size: 18px;
   font-weight: 500;
   margin: 0 5%;
-  -webkit-animation: fadein 7s;
-  animation: fadein 7s;
+  -webkit-animation: fadein 5s;
+  animation: fadein 5s;
 }
 
 .Home-container .countdown p {
@@ -261,7 +336,7 @@ textarea {
           justify-content: space-evenly;
   border: 1px solid #ffe5b4;
   border-radius: 10px;
-  margin: 2% 10%;
+  margin: 5% 10%;
   padding: 5% 0;
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-animation: fadein 2s;
@@ -295,7 +370,7 @@ textarea {
   border: 1px solid #ffe5b4;
   margin: 20px 20% 0px;
   text-align: center;
-  margin: 2% 10%;
+  margin: 5% 10%;
   -webkit-animation: fadein 1s;
   animation: fadein 1s;
 }
@@ -363,15 +438,10 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 2% 10%;
+  margin: 5% 10%;
   text-align: center;
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
-}
-
-.Registry-container h4 {
-  padding-bottom: 30px;
-  margin-right: 25px;
 }
 
 .Registry-container .Registry {
@@ -381,7 +451,6 @@ textarea {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 0 150px;
 }
 
 .Registry-container .Registry a {
@@ -427,7 +496,7 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 3% 10%;
+  margin: 5% 10%;
   text-align: center;
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
@@ -440,7 +509,6 @@ textarea {
   width: 75%;
   max-width: 450px;
   padding: 50px;
-  height: 375px;
   -webkit-transition: height 400ms;
   transition: height 400ms;
 }
@@ -458,7 +526,7 @@ textarea {
 }
 
 .RSVP-container .RSVP-form hr {
-  background: #73343a;
+  background: lightgray;
 }
 
 .RSVP-container .RSVP-form .input-name {
