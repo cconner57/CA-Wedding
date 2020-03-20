@@ -292,7 +292,7 @@ textarea {
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #ffe5b4;
   border-radius: 5px;
-  padding: 20px 30px;
+  padding: 20px;
   margin: 25px 15%;
   font-family: 'Dancing', serif;
   font-weight: 500;
@@ -570,7 +570,7 @@ textarea {
 }
 
 .RSVP-container .RSVP-form .RSVP-radio {
-  background-color: gold;
+  background-color: white;
   cursor: pointer;
   margin: 0px 3px 6px 0px;
 }
