@@ -7,10 +7,11 @@ $primary-color: rgb(115, 52, 58);
 $secondary-color: rgb(255, 229, 180);
 $accent-color: rgb(119, 129, 92);
 
-// $dark-shade: ;
-// $accent-shade: ;
-// $base-color: ;
-// $accent-tint: ;
+$color1: #dec3c3;
+$color2: #e7d3d3;
+$color3: #f0e4e4;
+$color4: #f9f4f4;
+$color5: #ffffff;
 
 /* Mixins */
 
@@ -105,12 +106,11 @@ textarea {
 
 /* Media Breakpoints */
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-	.navbar-container {
-		.navbar-row {
-			margin: 0;
-		}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.navbar-row {
+		margin: 0;
 	}
+
 	.Home-container {
 		margin: 5%;
 		padding: 0px;
@@ -132,15 +132,19 @@ textarea {
 	}
 	.RSVP-form {
 		height: 400px;
+		padding: 20px;
+		.form-check {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 850px) {
-	.navbar-container {
-		.navbar-row {
-			margin: 0px 25%;
-		}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.navbar-row {
+		margin: 0px 25%;
 	}
+
 	.Home-container {
 		margin: 5% 10%;
 		padding: 25px;
@@ -168,17 +172,20 @@ textarea {
 	}
 	.RSVP-form {
 		height: 375px;
+		padding: 50px;
+		label:first-child {
+			padding-right: 15px;
+		}
 	}
 }
 
-@media only screen and (min-width: 1024px) {
-	.navbar-container {
-		.navbar-row {
-			margin: 0px 25%;
-		}
+@media only screen and (min-width: 1025px) {
+	.navbar-row {
+		margin: 0px 25%;
 	}
+
 	.Home-container {
-		margin: 5% 10%;
+		margin: 2% 10%;
 		padding: 25px;
 		border: 1px solid $secondary-color;
 		border-radius: 10px;
@@ -189,14 +196,20 @@ textarea {
 			margin: 0 5%;
 		}
 	}
-	
+
+	.Gallery-container {
+		margin: 2% 10%;
+	}
+
+	.Reception-text a {
+		display: none;
+	}
+
 	.Registry-container {
+		margin: 2% 10%;
 		h4 {
 			padding-bottom: 30px;
 			margin-right: 25px;
-		}
-		.Reception-text a {
-			display: none;
 		}
 		.Registry {
 			margin: 0 150px;
@@ -205,8 +218,13 @@ textarea {
 			}
 		}
 	}
+
 	.RSVP-form {
 		height: 375px;
+		padding: 50px;
+		label:first-child {
+			padding-right: 15px;
+		}
 	}
 }
 
@@ -340,9 +358,7 @@ textarea {
 .Gallery-container {
 	@include container(center);
 	border: 1px solid $secondary-color;
-	margin: 20px 20% 0px;
 	text-align: center;
-	margin: 5% 10%;
 	@include fade(1s);
 	h2 {
 		background: rgba(211, 211, 211, .4);
@@ -392,7 +408,6 @@ textarea {
 .Registry-container {
 	display: flex;
 	flex-direction: column;
-	margin: 5% 10%;
 	text-align: center;
 	@include fade(2s);
 	.Registry {
@@ -439,7 +454,6 @@ textarea {
 		border-radius: 15px;
 		width: 75%;
 		max-width: 450px;
-		padding: 50px;
 		transition: height 400ms;
 		h1 {
 			font-family: 'Dancing Script', cursive;

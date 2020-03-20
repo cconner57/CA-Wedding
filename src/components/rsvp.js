@@ -50,28 +50,30 @@ function RSVP() {
 							onChange={(e) => setRSVPForm(e.target.value)}
 						/>
 						<div className="form-check form-check-inline">
-							<label className="pr-3">Attending:</label>
-							<input
-								className="RSVP-radio"
-								type="radio"
-								name="attending"
-								required
-								value="accept"
-								onChange={(e) => setRSVPForm(e.target.value)}
-							/>
-							<label className="RSVP-label mr-3" htmlFor="inlineRadio1">
-								Accept
-							</label>
-							<input
-								className="RSVP-radio"
-								type="radio"
-								name="attending"
-								value="decline"
-								onChange={(e) => setRSVPForm(e.target.value)}
-							/>
-							<label className="RSVP-label" htmlFor="inlineRadio2">
-								Decline
-							</label>
+							<label>Attending:</label>
+							<div>
+								<input
+									className="RSVP-radio"
+									type="radio"
+									name="attending"
+									required
+									value="accept"
+									onChange={(e) => setRSVPForm(e.target.value)}
+								/>
+								<label className="RSVP-label mr-3" htmlFor="inlineRadio1">
+									Accept
+								</label>
+								<input
+									className="RSVP-radio"
+									type="radio"
+									name="attending"
+									value="decline"
+									onChange={(e) => setRSVPForm(e.target.value)}
+								/>
+								<label className="RSVP-label" htmlFor="inlineRadio2">
+									Decline
+								</label>
+							</div>
 						</div>
 						<div>
 							<button type="submit" className="RSVP-button">
