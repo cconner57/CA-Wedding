@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
 function RSVP() {
-	const [ rsvpForm, setRSVPForm ] = useState({
+	const [rsvpForm, setRSVPForm] = useState({
 		name: '',
 		song: '',
 		attending: ''
 	});
 
-	const handleSubmit = (e) => {
+	const handleSubmit = e => {
 		e.preventDefault();
 		document.querySelector('.RSVP-show').style.display = 'none';
 		document.querySelector('.RSVP-form').style.height = '165px';
@@ -25,64 +25,67 @@ function RSVP() {
 	};
 
 	return (
-		<div className="RSVP-container">
-			<div className="RSVP-form shadow-lg">
-				<div className="RSVP-show">
+		<div className='RSVP-container'>
+			<div className='RSVP-form shadow-lg'>
+				<div className='RSVP-show'>
 					<h4>Kindly Respond By</h4>
 					<h4>
 						November 18<sup>th</sup>, 2020
 					</h4>
 					<hr />
-					<form onSubmit={handleSubmit} action="https://formspree.io/mnqdgwjv" method="POST">
+					<form
+						onSubmit={handleSubmit}
+						action='https://formspree.io/mnqdgwjv'
+						method='POST'>
 						<input
-							type="text"
-							className="input-name"
-							name="name"
-							placeholder="First &amp; Last Name"
+							type='text'
+							className='input-name'
+							name='name'
+							placeholder='First &amp; Last Name'
 							required
-							onChange={(e) => setRSVPForm(e.target.value)}
+							onChange={e => setRSVPForm(e.target.value)}
 						/>
 						<textarea
-							type="textarea"
-							className="input-song"
-							name="song"
-							placeholder="Song request"
-							onChange={(e) => setRSVPForm(e.target.value)}
+							type='textarea'
+							className='input-song'
+							name='song'
+							placeholder='Song request'
+							onChange={e => setRSVPForm(e.target.value)}
 						/>
-						<div className="form-check form-check-inline">
+						<div className='form-check form-check-inline'>
 							<label>Attending:</label>
 							<div>
 								<input
-									className="RSVP-radio"
-									type="radio"
-									name="attending"
+									className='RSVP-radio'
+									type='radio'
+									name='attending'
 									required
-									value="accept"
-									onChange={(e) => setRSVPForm(e.target.value)}
+									value='accept'
+									onChange={e => setRSVPForm(e.target.value)}
 								/>
-								<label className="RSVP-label mr-3" htmlFor="inlineRadio1">
+								<label className='RSVP-label mr-3' htmlFor='inlineRadio1'>
 									Accept
 								</label>
 								<input
-									className="RSVP-radio"
-									type="radio"
-									name="attending"
-									value="decline"
-									onChange={(e) => setRSVPForm(e.target.value)}
+									className='RSVP-radio'
+									type='radio'
+									name='attending'
+									value='decline'
+									onChange={e => setRSVPForm(e.target.value)}
 								/>
-								<label className="RSVP-label" htmlFor="inlineRadio2">
+								<label className='RSVP-label' htmlFor='inlineRadio2'>
 									Decline
 								</label>
 							</div>
 						</div>
 						<div>
-							<button type="submit" className="RSVP-button">
+							<button type='submit' className='RSVP-button'>
 								Submit
 							</button>
 						</div>
 					</form>
 				</div>
-				<div className="RSVP-submit">
+				<div className='RSVP-submit'>
 					<h4>RSVP Sent,</h4>
 					<h5>Thank you {rsvpForm.name}</h5>
 				</div>
