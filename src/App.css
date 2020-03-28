@@ -1,636 +1,636 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 /* Theme Colors */
 /* Mixins */
 /* CSS Normalize */
 html {
-	line-height: 1.15;
-	-webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-	margin: 0;
+  margin: 0;
 }
 
 h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 a {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 img {
-	border-style: none;
+  border-style: none;
 }
 
 button,
 input {
-	font-family: inherit;
-	font-size: 100%;
-	line-height: 1.15;
-	margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
 }
 
 button,
 input {
-	overflow: visible;
+  overflow: visible;
 }
 
 button,
 select {
-	text-transform: none;
+  text-transform: none;
 }
 
 button,
 [type='button'],
 [type='submit'] {
-	-webkit-appearance: button;
+  -webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,
 [type='reset']::-moz-focus-inner,
 [type='submit']::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
+  border-style: none;
+  padding: 0;
 }
 
 button:-moz-focusring,
 [type='button']:-moz-focusring,
 [type='reset']:-moz-focusring,
 [type='submit']:-moz-focusring {
-	outline: 1px dotted ButtonText;
+  outline: 1px dotted ButtonText;
 }
 
 textarea {
-	overflow: auto;
+  overflow: auto;
 }
 
 [type='radio'] {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
 }
 
 /* Media Breakpoints */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-	.navbar-row {
-		margin: 0;
-	}
-	.Home-container {
-		margin: 5%;
-		padding: 0px;
-		border: none;
-		background: none;
-	}
-	.Home-container h2 {
-		margin: 0;
-	}
-	iframe {
-		display: none;
-	}
-	.Registry {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		margin: 0 50px;
-	}
-	.Registry a {
-		margin: 15px 40px;
-	}
-	.RSVP-form {
-		height: 400px;
-		padding: 20px;
-	}
-	.RSVP-form .form-check {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-	}
+  .navbar-row {
+    margin: 0;
+  }
+  .Home-container {
+    margin: 5%;
+    padding: 0px;
+    border: none;
+    background: none;
+  }
+  .Home-container h2 {
+    margin: 0;
+  }
+  iframe {
+    display: none;
+  }
+  .Registry {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 50px;
+  }
+  .Registry a {
+    margin: 15px 40px;
+  }
+  .RSVP-form {
+    height: 400px;
+    padding: 20px;
+  }
+  .RSVP-form .form-check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-	.navbar-row {
-		margin: 0px 25%;
-	}
-	.Home-container {
-		margin: 5% 10%;
-		padding: 25px;
-		border: 1px solid #ffe5b4;
-		border-radius: 10px;
-		background-image: url('/media/proposal.jpg');
-		background-size: cover;
-		background-position: center;
-	}
-	.Home-container h2 {
-		margin: 0 5%;
-	}
-	.Reception-text a {
-		display: none;
-	}
-	.Registry-container {
-		margin: 201px 0;
-	}
-	.Registry {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		margin: 0 200px;
-	}
-	.Registry a {
-		margin: 15px 40px;
-	}
-	.RSVP-form {
-		height: 375px;
-		padding: 50px;
-	}
-	.RSVP-form label:first-child {
-		padding-right: 15px;
-	}
+  .navbar-row {
+    margin: 0px 25%;
+  }
+  .Home-container {
+    margin: 5% 10%;
+    padding: 25px;
+    border: 1px solid #ffe5b4;
+    border-radius: 10px;
+    background-image: url("/media/proposal.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .Home-container h2 {
+    margin: 0 5%;
+  }
+  .Reception-text a {
+    display: none;
+  }
+  .Registry-container {
+    margin: 201px 0;
+  }
+  .Registry {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 200px;
+  }
+  .Registry a {
+    margin: 15px 40px;
+  }
+  .RSVP-form {
+    height: 375px;
+    padding: 50px;
+  }
+  .RSVP-form label:first-child {
+    padding-right: 15px;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
-	.navbar-row {
-		margin: 0px 25%;
-	}
-	.Home-container {
-		margin: 2% 10%;
-		padding: 25px;
-		border: 1px solid #ffe5b4;
-		border-radius: 10px;
-		background-image: url('/media/proposal.jpg');
-		background-size: cover;
-		background-position: center;
-	}
-	.Home-container h2 {
-		margin: 0 5%;
-	}
-	.Gallery-container {
-		margin: 2% 10%;
-	}
-	.Reception-text a {
-		display: none;
-	}
-	.Registry-container {
-		margin: 2% 10%;
-	}
-	.Registry-container h4 {
-		padding-bottom: 30px;
-		margin-right: 25px;
-	}
-	.Registry-container .Registry {
-		margin: 0 150px;
-	}
-	.Registry-container .Registry a {
-		margin: 0 25px;
-	}
-	.RSVP-form {
-		height: 375px;
-		padding: 50px;
-	}
-	.RSVP-form label:first-child {
-		padding-right: 15px;
-	}
+  .navbar-row {
+    margin: 0px 25%;
+  }
+  .Home-container {
+    margin: 2% 10%;
+    padding: 25px;
+    border: 1px solid #ffe5b4;
+    border-radius: 10px;
+    background-image: url("/media/proposal.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .Home-container h2 {
+    margin: 0 5%;
+  }
+  .Gallery-container {
+    margin: 2% 10%;
+  }
+  .Reception-text a {
+    display: none;
+  }
+  .Registry-container {
+    margin: 2% 10%;
+  }
+  .Registry-container h4 {
+    padding-bottom: 30px;
+    margin-right: 25px;
+  }
+  .Registry-container .Registry {
+    margin: 0 150px;
+  }
+  .Registry-container .Registry a {
+    margin: 0 25px;
+  }
+  .RSVP-form {
+    height: 375px;
+    padding: 50px;
+  }
+  .RSVP-form label:first-child {
+    padding-right: 15px;
+  }
 }
 
 /* Navbar */
 .navbar-container {
-	background: rgba(206, 206, 206, 0.2);
-	-webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background: rgba(206, 206, 206, 0.2);
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .navbar-container .navbar-top {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	padding: 10px 0px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0px 5px;
 }
 
 .navbar-container .navbar-top .navbar-name h3 {
-	color: rgba(0, 0, 0, 0.8);
-	margin: 5px 15px;
-	font-family: 'Sulphur', serif;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 5px 15px;
+  font-family: 'Sulphur', serif;
 }
 
 .navbar-container .navbar-top .navbar-name h3:hover {
-	color: #b6b6b6;
-	-webkit-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	text-decoration: none;
+  color: #b6b6b6;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  text-decoration: none;
 }
 
 .navbar-container .navbar-row {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: space-evenly;
-	-ms-flex-pack: space-evenly;
-	justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .navbar-container .navbar-row .navbar-link p {
-	font-size: 16px;
-	font-weight: 500;
-	color: #464646;
+  font-size: 16px;
+  font-weight: 500;
+  color: #464646;
 }
 
 .navbar-container .navbar-row .navbar-link p:hover {
-	color: #b6b6b6;
-	-webkit-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	text-decoration: none;
+  color: #b6b6b6;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  text-decoration: none;
 }
 
 .navbar-container a:hover {
-	color: #b6b6b6;
-	-webkit-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	text-decoration: none;
+  color: #b6b6b6;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  text-decoration: none;
 }
 
 /* Home */
 .Home-container {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	text-align: center;
-	-webkit-animation: fadein 1s;
-	animation: fadein 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
 }
 
 .Home-container h2 {
-	background: rgba(255, 255, 255, 0.9);
-	border: 1px solid #ffe5b4;
-	border-radius: 5px;
-	padding: 15px;
-	font-family: 'Sulphur', serif;
-	-webkit-animation: fadein 5s;
-	animation: fadein 5s;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ffe5b4;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: 'Sulphur', serif;
+  -webkit-animation: fadein 5s;
+  animation: fadein 5s;
 }
 
 .Home-container .Home-body {
-	background: rgba(255, 255, 255, 0.9);
-	border: 1px solid #ffe5b4;
-	border-radius: 5px;
-	padding: 20px;
-	margin: 25px 15%;
-	font-family: 'Dancing', serif;
-	font-weight: 500;
-	-webkit-animation: fadein 5s;
-	animation: fadein 5s;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ffe5b4;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 25px 15%;
+  font-family: 'Dancing', serif;
+  font-weight: 500;
+  -webkit-animation: fadein 5s;
+  animation: fadein 5s;
 }
 
 .Home-container .Home-body p {
-	margin: 1% 10%;
+  margin: 1% 10%;
 }
 
 .Home-container .Home-body img {
-	width: 200px;
-	height: 250px;
-	border-radius: 50%;
-	margin-bottom: 15px;
-	border: 1px solid gray;
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 1px solid gray;
 }
 
 .Home-container .countdown {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	background: rgba(255, 255, 255, 0.9);
-	border: 1px solid #ffe5b4;
-	border-radius: 5px;
-	font-family: 'Sulphur', serif;
-	font-size: 18px;
-	font-weight: 500;
-	margin: 0 5%;
-	-webkit-animation: fadein 5s;
-	animation: fadein 5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ffe5b4;
+  border-radius: 5px;
+  font-family: 'Sulphur', serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 5%;
+  -webkit-animation: fadein 5s;
+  animation: fadein 5s;
 }
 
 .Home-container .countdown p {
-	margin: 0;
-	padding: 10px;
+  margin: 0;
+  padding: 10px;
 }
 
 /* Reception  */
 .Reception-container {
-	height: 90vh;
-	padding: 15px;
-	text-align: center;
-	background-image: url(/Media/ceremony.jpeg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	-webkit-animation: fadein 1s;
-	animation: fadein 1s;
+  height: 90vh;
+  padding: 15px;
+  text-align: center;
+  background-image: url(/Media/ceremony.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
 }
 
 .Reception-container .Reception-location {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: space-evenly;
-	-ms-flex-pack: space-evenly;
-	justify-content: space-evenly;
-	border: 1px solid #ffe5b4;
-	border-radius: 10px;
-	margin: 5% 10%;
-	padding: 5% 0;
-	background-color: rgba(255, 255, 255, 0.8);
-	-webkit-animation: fadein 2s;
-	animation: fadein 2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid #ffe5b4;
+  border-radius: 10px;
+  margin: 5% 10%;
+  padding: 5% 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
 }
 
 .Reception-container .Reception-location .Reception-text {
-	padding: 1% 5%;
+  padding: 1% 5%;
 }
 
 .Reception-container .Reception-location .Reception-text h4 {
-	text-decoration: underline;
-	padding: 20px 0px;
-	font-weight: 500;
+  text-decoration: underline;
+  padding: 20px 0px;
+  font-weight: 500;
 }
 
 .Reception-container .Reception-location iframe {
-	border: 2px solid #77815c;
-	border-radius: 15px;
-	width: 45%;
+  border: 2px solid #77815c;
+  border-radius: 15px;
+  width: 45%;
 }
 
 /* Gallery */
 .Gallery-container {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	border: 1px solid #ffe5b4;
-	text-align: center;
-	-webkit-animation: fadein 1s;
-	animation: fadein 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #ffe5b4;
+  text-align: center;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
 }
 
 .Gallery-container h2 {
-	background: rgba(211, 211, 211, 0.4);
-	margin: 10px 10px 0px;
-	border: 1px solid #77815c;
-	border-radius: 5px;
-	font-family: 'Sulphur', serif;
-	-webkit-animation: fadein 2s;
-	animation: fadein 2s;
+  background: rgba(211, 211, 211, 0.4);
+  margin: 10px 10px 0px;
+  border: 1px solid #77815c;
+  border-radius: 5px;
+  font-family: 'Sulphur', serif;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
 }
 
 .Gallery-container .Gallery-img {
-	border: 1px solid #77815c;
-	border-radius: 10px;
-	margin: 0px 5% 15px;
-	-webkit-animation: fadein 2s;
-	animation: fadein 2s;
+  border: 1px solid #77815c;
+  border-radius: 10px;
+  margin: 0px 5% 15px;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
 }
 
 .Gallery-container .Gallery-img .Gallery-image {
-	height: 100px;
-	border-radius: 5px;
-	margin: 10px 5px;
+  height: 100px;
+  border-radius: 5px;
+  margin: 10px 5px;
 }
 
 .Gallery-container .Gallery-img .Gallery-image:hover {
-	-webkit-transform: scale(1.8);
-	transform: scale(1.8);
-	-webkit-transition: all 1s ease;
-	transition: all 1s ease;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 /* Carousel */
 .Carousel-container {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	margin: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2%;
 }
 
 .Carousel-container .carousel {
-	width: 300px;
-	margin-bottom: 10px;
-	-webkit-animation: fadein 2s;
-	animation: fadein 2s;
+  width: 300px;
+  margin-bottom: 10px;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
 }
 
 .Carousel-container .carousel-item img {
-	height: 400px;
-	border-radius: 5px;
+  height: 400px;
+  border-radius: 5px;
 }
 
 /* Registry */
 .Registry-container {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	text-align: center;
-	-webkit-animation: fadein 2s;
-	animation: fadein 2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
 }
 
 .Registry-container .Registry {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: space-evenly;
-	-ms-flex-pack: space-evenly;
-	justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .Registry-container .Registry a {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	border: 0.2px solid lightgray;
-	border-radius: 10px;
-	padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: .2px solid lightgray;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .Registry-container .Registry img {
-	max-height: 70px;
-	margin: 10px;
-	padding: 15px;
+  max-height: 70px;
+  margin: 10px;
+  padding: 15px;
 }
 
 .Registry-container .Registry button {
-	margin: 0px 10px 10px;
-	padding: 10px;
-	font-weight: bold;
-	font-size: 14px;
-	background: white;
-	border: 1px solid lightgray;
-	border-radius: 10px;
-	font-family: 'Dancing', serif;
+  margin: 0px 10px 10px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  font-family: 'Dancing', serif;
 }
 
 .Registry-container .Registry button:hover {
-	background: #ffe5b4;
-	text-decoration: none;
+  background: #ffe5b4;
+  text-decoration: none;
 }
 
 /* RSVP */
 .RSVP-container {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	margin: 5% 10%;
-	text-align: center;
-	-webkit-animation: fadein 2s;
-	animation: fadein 2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5% 10%;
+  text-align: center;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
 }
 
 .RSVP-container .RSVP-form {
-	background: white;
-	border: 1px solid #ffe5b4;
-	border-radius: 15px;
-	width: 75%;
-	max-width: 450px;
-	-webkit-transition: height 400ms;
-	transition: height 400ms;
+  background: white;
+  border: 1px solid #ffe5b4;
+  border-radius: 15px;
+  width: 75%;
+  max-width: 450px;
+  -webkit-transition: height 400ms;
+  transition: height 400ms;
 }
 
 .RSVP-container .RSVP-form h1 {
-	font-family: 'Dancing Script', cursive;
-	color: black;
+  font-family: 'Dancing Script', cursive;
+  color: black;
 }
 
 .RSVP-container .RSVP-form h4,
 .RSVP-container .RSVP-form h5,
 .RSVP-container .RSVP-form form {
-	font-family: 'Dosis', sans-serif;
-	color: black;
+  font-family: 'Dosis', sans-serif;
+  color: black;
 }
 
 .RSVP-container .RSVP-form hr {
-	background: lightgray;
+  background: lightgray;
 }
 
 .RSVP-container .RSVP-form .input-name {
-	margin: 10px;
-	padding: 5px;
-	width: 85%;
-	background: white;
-	border-radius: 5px;
-	border: 1px solid gold;
-	border-bottom: 1px solid #77815c;
+  margin: 10px;
+  padding: 5px;
+  width: 85%;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid gold;
+  border-bottom: 1px solid #77815c;
 }
 
 .RSVP-container .RSVP-form .input-song {
-	margin: 10px;
-	padding: 5px;
-	width: 85%;
-	background: white;
-	border-radius: 5px;
-	border: 1px solid gold;
-	border-bottom: 1px solid #77815c;
+  margin: 10px;
+  padding: 5px;
+  width: 85%;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid gold;
+  border-bottom: 1px solid #77815c;
 }
 
 .RSVP-container .RSVP-form .RSVP-radio {
-	background-color: white;
-	cursor: pointer;
-	margin: 0px 3px 6px 0px;
+  background-color: white;
+  cursor: pointer;
+  margin: 0px 3px 6px 0px;
 }
 
 .RSVP-container .RSVP-form .RSVP-radio:checked {
-	background: black;
+  background: black;
 }
 
 .RSVP-container .RSVP-form .RSVP-button {
-	background: white;
-	margin-top: 10px;
-	padding: 5px 10px;
-	border: 1px solid gold;
-	border-radius: 5px;
-	font-family: 'Dosis', sans-serif;
+  background: white;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid gold;
+  border-radius: 5px;
+  font-family: 'Dosis', sans-serif;
 }
 
 .RSVP-container .RSVP-form .RSVP-button:hover {
-	background: #ffe5b4;
+  background: #ffe5b4;
 }
 
 .RSVP-container .RSVP-form ::-webkit-input-placeholder {
-	color: black;
+  color: black;
 }
 
 .RSVP-container .RSVP-form :-ms-input-placeholder {
-	color: black;
+  color: black;
 }
 
 .RSVP-container .RSVP-form ::-ms-input-placeholder {
-	color: black;
+  color: black;
 }
 
 .RSVP-container .RSVP-form ::placeholder {
-	color: black;
+  color: black;
 }
 
 .position-i {
-	top: -125px;
+  top: -125px;
 }
 
 .RSVP-submit {
-	display: none;
+  display: none;
 }
 
 @-webkit-keyframes fadein {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=App.css.map */
